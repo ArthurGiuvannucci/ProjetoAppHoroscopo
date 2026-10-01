@@ -71,7 +71,7 @@
             <Container class="javax.swing.JPanel" name="areaResultado">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="700" y="140" width="330" height="580"/>
+                  <AbsoluteConstraints x="700" y="90" width="330" height="580"/>
                 </Constraint>
               </Constraints>
 
@@ -147,7 +147,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="20" y="140" width="410" height="250"/>
+                  <AbsoluteConstraints x="60" y="90" width="410" height="250"/>
                 </Constraint>
               </Constraints>
 
@@ -342,7 +342,7 @@
             <Container class="javax.swing.JPanel" name="areaCompatibilidade">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="20" y="470" width="410" height="240"/>
+                  <AbsoluteConstraints x="70" y="430" width="410" height="240"/>
                 </Constraint>
               </Constraints>
 
@@ -477,6 +477,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Calcular"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCalularActionPerformed"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
@@ -524,7 +527,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="40" y="60" width="240" height="600"/>
+                  <AbsoluteConstraints x="40" y="60" width="240" height="570"/>
                 </Constraint>
               </Constraints>
 
@@ -585,7 +588,7 @@
                           <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                           <Component id="imgSignoAries" min="-2" pref="195" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                          <Component id="tituloAries" pref="99" max="32767" attributes="0"/>
+                          <Component id="tituloAries" pref="69" max="32767" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="tfPeriodoAries" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -705,7 +708,7 @@
             <Container class="javax.swing.JPanel" name="areaEnergiaAries">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="740" y="90" width="350" height="300"/>
+                  <AbsoluteConstraints x="740" y="60" width="350" height="300"/>
                 </Constraint>
               </Constraints>
 
@@ -807,19 +810,31 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="tfAmorAries">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="78% "/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="tfTrabalhoAries">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="88%"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="tfSaudeAries">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="82%"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="tfSorteAries">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value=" 75%"/>
+                  </Properties>
                 </Component>
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="areaMensagemAries">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="750" y="420" width="320" height="240"/>
+                  <AbsoluteConstraints x="750" y="420" width="320" height="250"/>
                 </Constraint>
               </Constraints>
 
@@ -998,7 +1013,7 @@
                       <Properties>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
-                        <Property name="text" type="java.lang.String" value="impulsividade, impaci&#xea;ncia, agressividade, teimosia e &#xa;dificuldade em esperar."/>
+                        <Property name="text" type="java.lang.String" value="impulsividade, impaci&#xea;ncia, agressividade, teimosia e dificuldade em esperar."/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -1134,7 +1149,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="40" y="90" width="240" height="550"/>
+                  <AbsoluteConstraints x="50" y="40" width="240" height="550"/>
                 </Constraint>
               </Constraints>
 
@@ -1195,7 +1210,7 @@
                           <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
                           <Component id="imgSignoAquario" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="tituloAquario" pref="47" max="32767" attributes="0"/>
+                          <Component id="tituloAquario" max="32767" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="tfPeriodoAquario" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1394,7 +1409,7 @@
             <Container class="javax.swing.JPanel" name="areaEnergiaAquario">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="740" y="90" width="340" height="300"/>
+                  <AbsoluteConstraints x="740" y="40" width="340" height="320"/>
                 </Constraint>
               </Constraints>
 
@@ -1448,7 +1463,7 @@
                           <Component id="sorteAquario" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="tfSorteAquario" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="40" max="32767" attributes="0"/>
+                          <EmptySpace pref="60" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1495,19 +1510,31 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="tfAmorAquario">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="85%"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="tfTrabalhoAquario">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value=" 88%"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="tfSaudeAquario">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="82%"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="tfSorteAquario">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="75%"/>
+                  </Properties>
                 </Component>
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="areaMensagemAquario">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="750" y="420" width="320" height="250"/>
+                  <AbsoluteConstraints x="740" y="420" width="330" height="240"/>
                 </Constraint>
               </Constraints>
 
@@ -1520,7 +1547,7 @@
                               <Component id="jScrollPane46" min="-2" pref="270" max="-2" attributes="0"/>
                               <Component id="tituloMensagemAquario" min="-2" pref="238" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="26" max="32767" attributes="0"/>
+                          <EmptySpace pref="36" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace max="32767" attributes="0"/>
@@ -1586,7 +1613,7 @@
             <Container class="javax.swing.JPanel" name="areaCaracteristicasAquario">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="320" y="70" width="380" height="330"/>
+                  <AbsoluteConstraints x="320" y="40" width="380" height="360"/>
                 </Constraint>
               </Constraints>
 
@@ -1667,7 +1694,7 @@
                       <Properties>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
-                        <Property name="text" type="java.lang.String" value="criatividade, independ&#xea;ncia, originalidade, intelig&#xea;ncia e &#xa;vis&#xe3;o de futuro."/>
+                        <Property name="text" type="java.lang.String" value="criatividade, independ&#xea;ncia, originalidade, intelig&#xea;ncia e vis&#xe3;o de futuro."/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -1683,7 +1710,7 @@
                       <Properties>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
-                        <Property name="text" type="java.lang.String" value="teimosia, distanciamento emocional, imprevisibilidade,&#xa;rebeldia e dificuldade em seguir regras."/>
+                        <Property name="text" type="java.lang.String" value="teimosia, distanciamento emocional, imprevisibilidade, rebeldia e dificuldade em seguir regras."/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -1734,7 +1761,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="40" y="90" width="240" height="550"/>
+                  <AbsoluteConstraints x="50" y="60" width="240" height="550"/>
                 </Constraint>
               </Constraints>
 
@@ -1795,7 +1822,7 @@
                           <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
                           <Component id="imgSignoCancer" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="tituloCancer" pref="49" max="32767" attributes="0"/>
+                          <Component id="tituloCancer" max="32767" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="tfPeriodoCancer" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1912,7 +1939,7 @@
             <Container class="javax.swing.JPanel" name="areaEnergiaCancer">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="740" y="90" width="340" height="290"/>
+                  <AbsoluteConstraints x="740" y="60" width="340" height="310"/>
                 </Constraint>
               </Constraints>
 
@@ -1967,7 +1994,7 @@
                           <Component id="sorteCancer" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="tfSorteCancer" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="30" max="32767" attributes="0"/>
+                          <EmptySpace pref="50" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -2014,12 +2041,24 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="tfAmorCancer">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="92%"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="tfTrabalhoCancer">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value=" 85%"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="tfSaudeCancer">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="65%"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="tfSorteCancer">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="80%"/>
+                  </Properties>
                 </Component>
               </SubComponents>
             </Container>
@@ -2105,7 +2144,7 @@
             <Container class="javax.swing.JPanel" name="areaCaracteristicasCancer">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="330" y="60" width="380" height="330"/>
+                  <AbsoluteConstraints x="330" y="60" width="380" height="340"/>
                 </Constraint>
               </Constraints>
 
@@ -2186,7 +2225,7 @@
                       <Properties>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
-                        <Property name="text" type="java.lang.String" value="sensibilidade, empatia, prote&#xe7;&#xe3;o, lealdade e forte &#xa;v&#xed;nculo familiar."/>
+                        <Property name="text" type="java.lang.String" value="sensibilidade, empatia, prote&#xe7;&#xe3;o, lealdade e forte v&#xed;nculo familiar."/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -2202,7 +2241,7 @@
                       <Properties>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
-                        <Property name="text" type="java.lang.String" value="inseguran&#xe7;a, excesso de sensibilidade, apego ao passado, &#xa;mudan&#xe7;as de humor e tend&#xea;ncia a se fechar."/>
+                        <Property name="text" type="java.lang.String" value="inseguran&#xe7;a, excesso de sensibilidade, apego ao passado, mudan&#xe7;as de humor e tend&#xea;ncia a se fechar."/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -2299,7 +2338,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="1" y="1" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="0" y="0" width="-1" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -2335,7 +2374,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="40" y="90" width="240" height="550"/>
+                  <AbsoluteConstraints x="50" y="60" width="240" height="550"/>
                 </Constraint>
               </Constraints>
 
@@ -2396,7 +2435,7 @@
                           <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
                           <Component id="imgSignoEscorpiao" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="tituloEscorpiao" pref="46" max="32767" attributes="0"/>
+                          <Component id="tituloEscorpiao" max="32767" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="tfPeriodoEscorpiao" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -2513,7 +2552,7 @@
             <Container class="javax.swing.JPanel" name="areaEnergiaEscorpiao">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="740" y="90" width="340" height="290"/>
+                  <AbsoluteConstraints x="740" y="60" width="340" height="310"/>
                 </Constraint>
               </Constraints>
 
@@ -2568,7 +2607,7 @@
                           <Component id="sorteEscorpiao" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="tfSorteEscorpiao" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="30" max="32767" attributes="0"/>
+                          <EmptySpace pref="50" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -2615,12 +2654,24 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="tfAmorEscorpiao">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="95% "/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="tfTrabalhoEscorpiao">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value=" 88%"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="tfSaudeEscorpiao">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="75%"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="tfSorteEscorpiao">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="80% "/>
+                  </Properties>
                 </Component>
               </SubComponents>
             </Container>
@@ -2706,7 +2757,7 @@
             <Container class="javax.swing.JPanel" name="areaCaracteristicasEscorpiao">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="330" y="60" width="380" height="330"/>
+                  <AbsoluteConstraints x="330" y="60" width="380" height="350"/>
                 </Constraint>
               </Constraints>
 
@@ -2746,7 +2797,7 @@
                           <Component id="pmelhoriasEscorpiao" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jScrollPane11" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace pref="24" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -2787,7 +2838,7 @@
                       <Properties>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
-                        <Property name="text" type="java.lang.String" value="determina&#xe7;&#xe3;o, intensidade, lealdade, coragem e &#xa;capacidade de investiga&#xe7;&#xe3;o."/>
+                        <Property name="text" type="java.lang.String" value="determina&#xe7;&#xe3;o, intensidade, lealdade, coragem e capacidade de investiga&#xe7;&#xe3;o."/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -2803,7 +2854,7 @@
                       <Properties>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
-                        <Property name="text" type="java.lang.String" value="ci&#xfa;me, desconfian&#xe7;a, possessividade, rancor e &#xa;tend&#xea;ncia ao controle."/>
+                        <Property name="text" type="java.lang.String" value="ci&#xfa;me, desconfian&#xe7;a, possessividade, rancor e tend&#xea;ncia ao controle."/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -2936,7 +2987,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="40" y="90" width="240" height="550"/>
+                  <AbsoluteConstraints x="50" y="60" width="240" height="550"/>
                 </Constraint>
               </Constraints>
 
@@ -2997,7 +3048,7 @@
                           <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
                           <Component id="imgSignoGemeos" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="tituloGemeos" pref="48" max="32767" attributes="0"/>
+                          <Component id="tituloGemeos" max="32767" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="tfPeriodoGemeos" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -3196,7 +3247,7 @@
             <Container class="javax.swing.JPanel" name="areaEnergiaGemeos">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="740" y="90" width="330" height="270"/>
+                  <AbsoluteConstraints x="740" y="60" width="330" height="300"/>
                 </Constraint>
               </Constraints>
 
@@ -3251,7 +3302,7 @@
                           <Component id="sorteGemeos" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="tfSorteGemeos" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="10" max="32767" attributes="0"/>
+                          <EmptySpace pref="40" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -3298,12 +3349,30 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="tfAmorGemeos">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="75%"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="tfTrabalhoGemeos">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value=" 85%"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tfTrabalhoGemeosActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JTextField" name="tfSaudeGemeos">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="65%"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="tfSorteGemeos">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="50%"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tfSorteGemeosActionPerformed"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
@@ -3389,7 +3458,7 @@
             <Container class="javax.swing.JPanel" name="areaCaracteristicasGemeos">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="330" y="60" width="380" height="330"/>
+                  <AbsoluteConstraints x="330" y="60" width="380" height="350"/>
                 </Constraint>
               </Constraints>
 
@@ -3470,7 +3539,7 @@
                       <Properties>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
-                        <Property name="text" type="java.lang.String" value="comunica&#xe7;&#xe3;o, intelig&#xea;ncia, curiosidade, criatividade &#xa;e adaptabilidade."/>
+                        <Property name="text" type="java.lang.String" value="comunica&#xe7;&#xe3;o, intelig&#xea;ncia, curiosidade, criatividade e adaptabilidade."/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -3486,7 +3555,7 @@
                       <Properties>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
-                        <Property name="text" type="java.lang.String" value="inconst&#xe2;ncia, ansiedade, dispers&#xe3;o, superficialidade &#xa;e indecis&#xe3;o."/>
+                        <Property name="text" type="java.lang.String" value="inconst&#xe2;ncia, ansiedade, dispers&#xe3;o, superficialidade e indecis&#xe3;o."/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -3537,7 +3606,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="40" y="90" width="240" height="550"/>
+                  <AbsoluteConstraints x="50" y="60" width="240" height="550"/>
                 </Constraint>
               </Constraints>
 
@@ -3598,7 +3667,7 @@
                           <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
                           <Component id="imgSignoLeao" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="tituloLeao" pref="48" max="32767" attributes="0"/>
+                          <Component id="tituloLeao" max="32767" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="tfPeriodoLeao" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -3715,7 +3784,7 @@
             <Container class="javax.swing.JPanel" name="areaPrevisaoLeao">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="320" y="420" width="380" height="240"/>
+                  <AbsoluteConstraints x="320" y="440" width="380" height="240"/>
                 </Constraint>
               </Constraints>
 
@@ -3797,7 +3866,7 @@
             <Container class="javax.swing.JPanel" name="areaEnergiaLeao">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="740" y="90" width="330" height="270"/>
+                  <AbsoluteConstraints x="740" y="60" width="330" height="300"/>
                 </Constraint>
               </Constraints>
 
@@ -3851,7 +3920,7 @@
                           <Component id="sorteLeao" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="tfSorteLeao" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="10" max="32767" attributes="0"/>
+                          <EmptySpace pref="40" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -3898,19 +3967,34 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="tfAmorLeao">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="100%"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="tfTrabalhoLeao">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="100%"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tfTrabalhoLeaoActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JTextField" name="tfSaudeLeao">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="100%"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="tfSorteLeao">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="100%"/>
+                  </Properties>
                 </Component>
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="areaMensagemLeao">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="750" y="420" width="320" height="240"/>
+                  <AbsoluteConstraints x="750" y="440" width="320" height="240"/>
                 </Constraint>
               </Constraints>
 
@@ -3989,7 +4073,7 @@
             <Container class="javax.swing.JPanel" name="areaCaracteristicasLeao">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="330" y="60" width="380" height="330"/>
+                  <AbsoluteConstraints x="330" y="60" width="380" height="350"/>
                 </Constraint>
               </Constraints>
 
@@ -4028,8 +4112,8 @@
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="pmelhoriasLeao" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jScrollPane20" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="jScrollPane20" min="-2" pref="78" max="-2" attributes="0"/>
+                          <EmptySpace pref="42" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -4070,7 +4154,7 @@
                       <Properties>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
-                        <Property name="text" type="java.lang.String" value="lideran&#xe7;a, confian&#xe7;a, criatividade, generosidade &#xa;e entusiasmo."/>
+                        <Property name="text" type="java.lang.String" value="lideran&#xe7;a, confian&#xe7;a, criatividade, generosidade e entusiasmo."/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -4086,7 +4170,7 @@
                       <Properties>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
-                        <Property name="text" type="java.lang.String" value="orgulho, necessidade de reconhecimento, autoritarismo, &#xa;vaidade e dificuldade em aceitar cr&#xed;ticas."/>
+                        <Property name="text" type="java.lang.String" value="orgulho, necessidade de reconhecimento, autoritarismo, vaidade e dificuldade em aceitar cr&#xed;ticas."/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -4137,7 +4221,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="40" y="90" width="240" height="550"/>
+                  <AbsoluteConstraints x="50" y="50" width="240" height="550"/>
                 </Constraint>
               </Constraints>
 
@@ -4198,7 +4282,7 @@
                           <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
                           <Component id="imgSignoLibra" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="tituloLibra" pref="48" max="32767" attributes="0"/>
+                          <Component id="tituloLibra" max="32767" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="tfPeriodoLibra" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -4397,7 +4481,7 @@
             <Container class="javax.swing.JPanel" name="areaEnergiaLibra">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="740" y="90" width="330" height="270"/>
+                  <AbsoluteConstraints x="740" y="50" width="330" height="300"/>
                 </Constraint>
               </Constraints>
 
@@ -4452,7 +4536,7 @@
                           <Component id="sorteLibra" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="tfSorteLibra" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="10" max="32767" attributes="0"/>
+                          <EmptySpace pref="40" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -4590,7 +4674,7 @@
             <Container class="javax.swing.JPanel" name="areaCaracteristicasLibra">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="340" y="50" width="380" height="330"/>
+                  <AbsoluteConstraints x="340" y="50" width="380" height="350"/>
                 </Constraint>
               </Constraints>
 
@@ -4671,7 +4755,7 @@
                       <Properties>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
-                        <Property name="text" type="java.lang.String" value="diplomacia, sociabilidade, justi&#xe7;a, charme e capacidade &#xa;de concilia&#xe7;&#xe3;o."/>
+                        <Property name="text" type="java.lang.String" value="diplomacia, sociabilidade, justi&#xe7;a, charme e capacidade de concilia&#xe7;&#xe3;o."/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -4687,7 +4771,7 @@
                       <Properties>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
-                        <Property name="text" type="java.lang.String" value="indecis&#xe3;o, necessidade de aprova&#xe7;&#xe3;o, evitar conflitos &#xa;excessivamente e dificuldade em tomar decis&#xf5;es."/>
+                        <Property name="text" type="java.lang.String" value="indecis&#xe3;o, necessidade de aprova&#xe7;&#xe3;o, evitar conflitos excessivamente e dificuldade em tomar decis&#xf5;es."/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -4738,7 +4822,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="40" y="90" width="240" height="550"/>
+                  <AbsoluteConstraints x="40" y="60" width="240" height="550"/>
                 </Constraint>
               </Constraints>
 
@@ -4799,7 +4883,7 @@
                           <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
                           <Component id="imgSignoPeixes" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="tituloPeixes" pref="48" max="32767" attributes="0"/>
+                          <Component id="tituloPeixes" max="32767" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="tfPeriodoPeixes" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -4998,7 +5082,7 @@
             <Container class="javax.swing.JPanel" name="areaEnergiaPeixes">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="740" y="90" width="330" height="270"/>
+                  <AbsoluteConstraints x="740" y="60" width="330" height="290"/>
                 </Constraint>
               </Constraints>
 
@@ -5053,7 +5137,7 @@
                           <Component id="sorteAries6" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="tfSorteAries6" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="10" max="32767" attributes="0"/>
+                          <EmptySpace pref="30" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -5191,7 +5275,7 @@
             <Container class="javax.swing.JPanel" name="areaCaracteristicasPeixes">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="330" y="60" width="380" height="340"/>
+                  <AbsoluteConstraints x="330" y="60" width="380" height="350"/>
                 </Constraint>
               </Constraints>
 
@@ -5272,7 +5356,7 @@
                       <Properties>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
-                        <Property name="text" type="java.lang.String" value="empatia, imagina&#xe7;&#xe3;o, sensibilidade, criatividade e &#xa;compaix&#xe3;o."/>
+                        <Property name="text" type="java.lang.String" value="empatia, imagina&#xe7;&#xe3;o, sensibilidade, criatividade e compaix&#xe3;o."/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -5288,7 +5372,7 @@
                       <Properties>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
-                        <Property name="text" type="java.lang.String" value="idealiza&#xe7;&#xe3;o, escapismo, indecis&#xe3;o, excesso de sensibilidade e dificuldade em &#xa;estabelecer limites."/>
+                        <Property name="text" type="java.lang.String" value="idealiza&#xe7;&#xe3;o, escapismo, indecis&#xe3;o, excesso de sensibilidade e dificuldade em estabelecer limites."/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -5339,7 +5423,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="40" y="90" width="240" height="550"/>
+                  <AbsoluteConstraints x="40" y="60" width="240" height="550"/>
                 </Constraint>
               </Constraints>
 
@@ -5400,7 +5484,7 @@
                           <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
                           <Component id="imgSignoSargitario" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="tituloSargitario" pref="46" max="32767" attributes="0"/>
+                          <Component id="tituloSargitario" max="32767" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="tfPeriodoSargitario" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -5599,7 +5683,7 @@
             <Container class="javax.swing.JPanel" name="areaEnergiaSargitario">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="740" y="90" width="330" height="270"/>
+                  <AbsoluteConstraints x="740" y="60" width="330" height="300"/>
                 </Constraint>
               </Constraints>
 
@@ -5654,7 +5738,7 @@
                           <Component id="sorteSargitario" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="tfSorteSargitario" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="10" max="32767" attributes="0"/>
+                          <EmptySpace pref="40" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -5792,7 +5876,7 @@
             <Container class="javax.swing.JPanel" name="areaCaracteristicasSargitario">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="330" y="60" width="380" height="330"/>
+                  <AbsoluteConstraints x="320" y="60" width="380" height="350"/>
                 </Constraint>
               </Constraints>
 
@@ -5869,7 +5953,7 @@
 
                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                   <SubComponents>
-                    <Component class="javax.swing.JTextArea" name="txFortesSargitariov">
+                    <Component class="javax.swing.JTextArea" name="txFortesSargitario">
                       <Properties>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
@@ -5889,7 +5973,7 @@
                       <Properties>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
-                        <Property name="text" type="java.lang.String" value="impulsividade, excesso de sinceridade, impaci&#xea;ncia,&#xa;irresponsabilidade e dificuldade com limites."/>
+                        <Property name="text" type="java.lang.String" value="impulsividade, excesso de sinceridade, impaci&#xea;ncia, irresponsabilidade e dificuldade com limites."/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -5940,7 +6024,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="40" y="90" width="240" height="550"/>
+                  <AbsoluteConstraints x="40" y="60" width="240" height="550"/>
                 </Constraint>
               </Constraints>
 
@@ -6001,7 +6085,7 @@
                           <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
                           <Component id="imgSignoTouro" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="tituloTouro" pref="46" max="32767" attributes="0"/>
+                          <Component id="tituloTouro" max="32767" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="tfPeriodoTouro" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -6200,7 +6284,7 @@
             <Container class="javax.swing.JPanel" name="areaEnergiaTouro">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="740" y="90" width="330" height="270"/>
+                  <AbsoluteConstraints x="740" y="60" width="330" height="300"/>
                 </Constraint>
               </Constraints>
 
@@ -6254,7 +6338,7 @@
                           <Component id="sorteTouro" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="tfSorteTouro" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="10" max="32767" attributes="0"/>
+                          <EmptySpace pref="40" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -6392,7 +6476,7 @@
             <Container class="javax.swing.JPanel" name="areaCaracteristicasTouro">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="340" y="50" width="380" height="330"/>
+                  <AbsoluteConstraints x="320" y="60" width="380" height="350"/>
                 </Constraint>
               </Constraints>
 
@@ -6473,7 +6557,7 @@
                       <Properties>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
-                        <Property name="text" type="java.lang.String" value="lealdade, estabilidade, determina&#xe7;&#xe3;o, paci&#xea;ncia e&#xa;praticidade."/>
+                        <Property name="text" type="java.lang.String" value="lealdade, estabilidade, determina&#xe7;&#xe3;o, paci&#xea;ncia e praticidade."/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -6489,7 +6573,7 @@
                       <Properties>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
-                        <Property name="text" type="java.lang.String" value="teimosia, possessividade, resist&#xea;ncia a mudan&#xe7;as e apego&#xa;excessivo ao conforto."/>
+                        <Property name="text" type="java.lang.String" value="teimosia, possessividade, resist&#xea;ncia a mudan&#xe7;as e apego excessivo ao conforto."/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -6540,7 +6624,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="40" y="90" width="240" height="550"/>
+                  <AbsoluteConstraints x="40" y="50" width="240" height="550"/>
                 </Constraint>
               </Constraints>
 
@@ -6601,7 +6685,7 @@
                           <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
                           <Component id="imgSignoVirgem" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="tituloVirgem" pref="46" max="32767" attributes="0"/>
+                          <Component id="tituloVirgem" max="32767" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="tfPeriodoVirgem" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -6800,7 +6884,7 @@
             <Container class="javax.swing.JPanel" name="areaEnergiaVirgem">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="740" y="90" width="330" height="270"/>
+                  <AbsoluteConstraints x="740" y="50" width="330" height="300"/>
                 </Constraint>
               </Constraints>
 
@@ -6855,7 +6939,7 @@
                           <Component id="sorteVirgem" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="tfSorteVirgem" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="10" max="32767" attributes="0"/>
+                          <EmptySpace pref="40" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -6993,7 +7077,7 @@
             <Container class="javax.swing.JPanel" name="areaCaracteristicasVirgem">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="350" y="50" width="380" height="330"/>
+                  <AbsoluteConstraints x="320" y="50" width="380" height="350"/>
                 </Constraint>
               </Constraints>
 
@@ -7074,7 +7158,7 @@
                       <Properties>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
-                        <Property name="text" type="java.lang.String" value="organiza&#xe7;&#xe3;o, intelig&#xea;ncia, aten&#xe7;&#xe3;o aos detalhes, &#xa;responsabilidade e praticidade."/>
+                        <Property name="text" type="java.lang.String" value="organiza&#xe7;&#xe3;o, intelig&#xea;ncia, aten&#xe7;&#xe3;o aos detalhes, responsabilidade e praticidade."/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -7090,7 +7174,7 @@
                       <Properties>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
-                        <Property name="text" type="java.lang.String" value="perfeccionismo, excesso de cr&#xed;tica, preocupa&#xe7;&#xe3;o, rigidez e &#xa;dificuldade em relaxar."/>
+                        <Property name="text" type="java.lang.String" value="perfeccionismo, excesso de cr&#xed;tica, preocupa&#xe7;&#xe3;o, rigidez e dificuldade em relaxar."/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -7141,7 +7225,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="40" y="90" width="240" height="550"/>
+                  <AbsoluteConstraints x="40" y="60" width="240" height="550"/>
                 </Constraint>
               </Constraints>
 
@@ -7202,7 +7286,7 @@
                           <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                           <Component id="imgSignoCapricornio" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
-                          <Component id="tituloCapricornio" pref="49" max="32767" attributes="0"/>
+                          <Component id="tituloCapricornio" max="32767" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="tfPeriodoCapricornio" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -7401,7 +7485,7 @@
             <Container class="javax.swing.JPanel" name="areaEnergiaCapricornio">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="740" y="90" width="330" height="270"/>
+                  <AbsoluteConstraints x="750" y="60" width="330" height="300"/>
                 </Constraint>
               </Constraints>
 
@@ -7456,7 +7540,7 @@
                           <Component id="sorteCapricornio" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="tfSorteCapricornio" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="10" max="32767" attributes="0"/>
+                          <EmptySpace pref="40" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -7594,7 +7678,7 @@
             <Container class="javax.swing.JPanel" name="areaCaracteristicasCapricornio">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="340" y="60" width="380" height="330"/>
+                  <AbsoluteConstraints x="340" y="60" width="380" height="350"/>
                 </Constraint>
               </Constraints>
 
@@ -7675,7 +7759,7 @@
                       <Properties>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
-                        <Property name="text" type="java.lang.String" value="disciplina, responsabilidade, ambi&#xe7;&#xe3;o, persist&#xea;ncia e&#xa;organiza&#xe7;&#xe3;o."/>
+                        <Property name="text" type="java.lang.String" value="disciplina, responsabilidade, ambi&#xe7;&#xe3;o, persist&#xea;ncia e organiza&#xe7;&#xe3;o."/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -7691,7 +7775,7 @@
                       <Properties>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
-                        <Property name="text" type="java.lang.String" value="pessimismo, rigidez, excesso de trabalho, frieza aparente e &#xa;dificuldade em demonstrar emo&#xe7;&#xf5;es."/>
+                        <Property name="text" type="java.lang.String" value="pessimismo, rigidez, excesso de trabalho, frieza aparente e dificuldade em demonstrar emo&#xe7;&#xf5;es."/>
                       </Properties>
                     </Component>
                   </SubComponents>

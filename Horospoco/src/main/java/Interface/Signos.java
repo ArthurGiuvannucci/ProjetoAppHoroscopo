@@ -22,6 +22,10 @@ public class Signos extends javax.swing.JFrame {
     public Signos() {
         initComponents();
         //RedimencionarImagens (); //serve para redimencionar imagens que ficaram estouradas
+        PreecherPrevisao();
+        PreencherMensagem();
+        CorrigirAreasdeTexto ();
+        
     }
 //TODA FUNÇÃO É CRIADA ABAIXO DO CONTRUTOR 
     public void RedimencionarImagens (){
@@ -83,7 +87,7 @@ public class Signos extends javax.swing.JFrame {
     int diaSemana = LocalDate.now() . getDayOfWeek(). getValue();
     
     //CRIAR A CONDICIONAL PARA PREENCHER O CAMPO PREVISAO
-     switch (diaSemana){
+     switch (diaSemana){ 
            case 1: // Segunda-feira
         txPrevisoesAries.setText("Áries: Comece a semana com energia e determinação.");
         txPrevisoesTouro.setText("Touro: Tenha paciência e organize suas tarefas.");
@@ -100,94 +104,94 @@ public class Signos extends javax.swing.JFrame {
         break;
 
     case 2: // Terça-feira
-        txPrevisaoAries.setText("Áries: Uma oportunidade pode aparecer inesperadamente.");
-        txPrevisaoTouro.setText("Touro: Um bom dia para resolver assuntos importantes.");
-        txPrevisaoGemeos.setText("Gêmeos: Uma conversa pode trazer uma nova oportunidade.");
-        txPrevisaoCancer.setText("Câncer: Procure manter a calma diante dos desafios.");
-        txPrevisaoLeao.setText("Leão: Sua determinação ajudará em uma tarefa importante.");
-        txPrevisaoVirgem.setText("Virgem: Concentre-se nas tarefas mais importantes.");
-        txPrevisaoLibra.setText("Libra: Uma boa conversa pode resolver uma situação.");
-        txPrevisaoEscorpiao.setText("Escorpião: Confie na sua capacidade de resolver problemas.");
-        txPrevisaoSagitario.setText("Sagitário: Uma nova ideia pode chamar sua atenção.");
-        txPrevisaoCapricornio.setText("Capricórnio: Continue trabalhando com determinação.");
-        txPrevisaoAquario.setText("Aquário: Compartilhe suas ideias com quem confia.");
-        txPrevisaoPeixes.setText("Peixes: Sua sensibilidade será importante hoje.");
-        break;
+       txPrevisoesAries.setText("Áries: Uma oportunidade pode aparecer inesperadamente.");
+txPrevisoesTouro.setText("Touro: Um bom dia para resolver assuntos importantes.");
+txPrevisoesGemeos.setText("Gêmeos: Uma conversa pode trazer uma nova oportunidade.");
+txPrevisoesCancer.setText("Câncer: Procure manter a calma diante dos desafios.");
+txPrevisoesLeao.setText("Leão: Sua determinação ajudará em uma tarefa importante.");
+txPrevisoesVirgem.setText("Virgem: Concentre-se nas tarefas mais importantes.");
+txPrevisoesLibra.setText("Libra: Uma boa conversa pode resolver uma situação.");
+txPrevisoesEscorpiao.setText("Escorpião: Confie na sua capacidade de resolver problemas.");
+txPrevisoesSargitario.setText("Sagitário: Uma nova ideia pode chamar sua atenção.");
+txPrevisoesCapricornio.setText("Capricórnio: Continue trabalhando com determinação.");
+txPrevisoesAquario.setText("Aquário: Compartilhe suas ideias com quem confia.");
+txPrevisoesPeixes.setText("Peixes: Sua sensibilidade será importante hoje.");
+break;
 
-    case 3: // Quarta-feira
-        txPrevisaoAries.setText("Áries: Evite decisões impulsivas e pense antes de agir.");
-        txPrevisaoTouro.setText("Touro: Tenha paciência e evite decisões por impulso.");
-        txPrevisaoGemeos.setText("Gêmeos: Uma conversa pode mudar sua forma de pensar.");
-        txPrevisaoCancer.setText("Câncer: Um momento em família pode trazer alegria.");
-        txPrevisaoLeao.setText("Leão: Evite conflitos e procure ouvir as outras pessoas.");
-        txPrevisaoVirgem.setText("Virgem: Não se preocupe demais com pequenos detalhes.");
-        txPrevisaoLibra.setText("Libra: Evite deixar decisões importantes para depois.");
-        txPrevisaoEscorpiao.setText("Escorpião: Evite agir com pressa.");
-        txPrevisaoSagitario.setText("Sagitário: Tenha cuidado para não assumir compromissos demais.");
-        txPrevisaoCapricornio.setText("Capricórnio: Não deixe a preocupação atrapalhar seu dia.");
-        txPrevisaoAquario.setText("Aquário: Procure enxergar uma situação por outro ponto de vista.");
-        txPrevisaoPeixes.setText("Peixes: Reserve um momento para organizar seus pensamentos.");
-        break;
+case 3: // Quarta-feira
+    txPrevisoesAries.setText("Áries: Evite decisões impulsivas e pense antes de agir.");
+    txPrevisoesTouro.setText("Touro: Tenha paciência e evite decisões por impulso.");
+    txPrevisoesGemeos.setText("Gêmeos: Uma conversa pode mudar sua forma de pensar.");
+    txPrevisoesCancer.setText("Câncer: Um momento em família pode trazer alegria.");
+    txPrevisoesLeao.setText("Leão: Evite conflitos e procure ouvir as outras pessoas.");
+    txPrevisoesVirgem.setText("Virgem: Não se preocupe demais com pequenos detalhes.");
+    txPrevisoesLibra.setText("Libra: Evite deixar decisões importantes para depois.");
+    txPrevisoesEscorpiao.setText("Escorpião: Evite agir com pressa.");
+    txPrevisoesSargitario.setText("Sagitário: Tenha cuidado para não assumir compromissos demais.");
+    txPrevisoesCapricornio.setText("Capricórnio: Não deixe a preocupação atrapalhar seu dia.");
+    txPrevisoesAquario.setText("Aquário: Procure enxergar uma situação por outro ponto de vista.");
+    txPrevisoesPeixes.setText("Peixes: Reserve um momento para organizar seus pensamentos.");
+    break;
 
-    case 4: // Quinta-feira
-        txPrevisaoAries.setText("Áries: Novos desafios podem trazer boas experiências.");
-        txPrevisaoTouro.setText("Touro: Novas oportunidades podem surgir hoje.");
-        txPrevisaoGemeos.setText("Gêmeos: Evite distrações e concentre-se nos seus objetivos.");
-        txPrevisaoCancer.setText("Câncer: Confie mais nas suas decisões.");
-        txPrevisaoLeao.setText("Leão: Um projeto pode começar a apresentar bons resultados.");
-        txPrevisaoVirgem.setText("Virgem: Seu esforço poderá trazer bons resultados.");
-        txPrevisaoLibra.setText("Libra: O dia favorece novas ideias e possibilidades.");
-        txPrevisaoEscorpiao.setText("Escorpião: Uma mudança pode trazer novas possibilidades.");
-        txPrevisaoSagitario.setText("Sagitário: O dia pode trazer uma oportunidade interessante.");
-        txPrevisaoCapricornio.setText("Capricórnio: Seus esforços podem começar a ser reconhecidos.");
-        txPrevisaoAquario.setText("Aquário: Um novo projeto pode despertar seu interesse.");
-        txPrevisaoPeixes.setText("Peixes: Uma boa notícia pode melhorar seu dia.");
-        break;
+case 4: // Quinta-feira
+    txPrevisoesAries.setText("Áries: Novos desafios podem trazer boas experiências.");
+    txPrevisoesTouro.setText("Touro: Novas oportunidades podem surgir hoje.");
+    txPrevisoesGemeos.setText("Gêmeos: Evite distrações e concentre-se nos seus objetivos.");
+    txPrevisoesCancer.setText("Câncer: Confie mais nas suas decisões.");
+    txPrevisoesLeao.setText("Leão: Um projeto pode começar a apresentar bons resultados.");
+    txPrevisoesVirgem.setText("Virgem: Seu esforço poderá trazer bons resultados.");
+    txPrevisoesLibra.setText("Libra: O dia favorece novas ideias e possibilidades.");
+    txPrevisoesEscorpiao.setText("Escorpião: Uma mudança pode trazer novas possibilidades.");
+    txPrevisoesSargitario.setText("Sagitário: O dia pode trazer uma oportunidade interessante.");
+    txPrevisoesCapricornio.setText("Capricórnio: Seus esforços podem começar a ser reconhecidos.");
+    txPrevisoesAquario.setText("Aquário: Um novo projeto pode despertar seu interesse.");
+    txPrevisoesPeixes.setText("Peixes: Uma boa notícia pode melhorar seu dia.");
+    break;
 
-    case 5: // Sexta-feira
-        txPrevisaoAries.setText("Áries: Aproveite o dia para comemorar suas conquistas.");
-        txPrevisaoTouro.setText("Touro: Aproveite o dia para descansar e estar com pessoas queridas.");
-        txPrevisaoGemeos.setText("Gêmeos: Aproveite o dia para se divertir e relaxar.");
-        txPrevisaoCancer.setText("Câncer: O dia favorece momentos de descontração.");
-        txPrevisaoLeao.setText("Leão: Aproveite a sexta-feira para comemorar suas conquistas.");
-        txPrevisaoVirgem.setText("Virgem: Termine a semana com sensação de dever cumprido.");
-        txPrevisaoLibra.setText("Libra: Aproveite o dia para estar perto de pessoas especiais.");
-        txPrevisaoEscorpiao.setText("Escorpião: Aproveite para concluir suas pendências.");
-        txPrevisaoSagitario.setText("Sagitário: Aproveite a sexta para se divertir.");
-        txPrevisaoCapricornio.setText("Capricórnio: Finalize suas tarefas antes de descansar.");
-        txPrevisaoAquario.setText("Aquário: Aproveite o dia para fazer algo diferente.");
-        txPrevisaoPeixes.setText("Peixes: Aproveite a sexta-feira para relaxar.");
-        break;
+case 5: // Sexta-feira
+    txPrevisoesAries.setText("Áries: Aproveite o dia para comemorar suas conquistas.");
+    txPrevisoesTouro.setText("Touro: Aproveite o dia para descansar e estar com pessoas queridas.");
+    txPrevisoesGemeos.setText("Gêmeos: Aproveite o dia para se divertir e relaxar.");
+    txPrevisoesCancer.setText("Câncer: O dia favorece momentos de descontração.");
+    txPrevisoesLeao.setText("Leão: Aproveite a sexta-feira para comemorar suas conquistas.");
+    txPrevisoesVirgem.setText("Virgem: Termine a semana com sensação de dever cumprido.");
+    txPrevisoesLibra.setText("Libra: Aproveite o dia para estar perto de pessoas especiais.");
+    txPrevisoesEscorpiao.setText("Escorpião: Aproveite para concluir suas pendências.");
+    txPrevisoesSargitario.setText("Sagitário: Aproveite a sexta para se divertir.");
+    txPrevisoesCapricornio.setText("Capricórnio: Finalize suas tarefas antes de descansar.");
+    txPrevisoesAquario.setText("Aquário: Aproveite o dia para fazer algo diferente.");
+    txPrevisoesPeixes.setText("Peixes: Aproveite a sexta-feira para relaxar.");
+    break;
 
-    case 6: // Sábado
-        txPrevisaoAries.setText("Áries: Aproveite o sábado para se divertir.");
-        txPrevisaoTouro.setText("Touro: Um ótimo dia para aproveitar momentos de lazer.");
-        txPrevisaoGemeos.setText("Gêmeos: Um passeio pode deixar seu dia mais agradável.");
-        txPrevisaoCancer.setText("Câncer: Aproveite o sábado para cuidar de você.");
-        txPrevisaoLeao.setText("Leão: Divirta-se e aproveite bons momentos.");
-        txPrevisaoVirgem.setText("Virgem: Reserve um tempo para descansar.");
-        txPrevisaoLibra.setText("Libra: Um momento de lazer fará bem ao seu dia.");
-        txPrevisaoEscorpiao.setText("Escorpião: Um programa diferente pode tornar seu sábado especial.");
-        txPrevisaoSagitario.setText("Sagitário: Um passeio pode renovar suas energias.");
-        txPrevisaoCapricornio.setText("Capricórnio: Permita-se descansar e aproveitar o momento.");
-        txPrevisaoAquario.setText("Aquário: Novas experiências podem deixar seu sábado divertido.");
-        txPrevisaoPeixes.setText("Peixes: Faça algo que você realmente gosta.");
-        break;
+case 6: // Sábado
+    txPrevisoesAries.setText("Áries: Aproveite o sábado para se divertir.");
+    txPrevisoesTouro.setText("Touro: Um ótimo dia para aproveitar momentos de lazer.");
+    txPrevisoesGemeos.setText("Gêmeos: Um passeio pode deixar seu dia mais agradável.");
+    txPrevisoesCancer.setText("Câncer: Aproveite o sábado para cuidar de você.");
+    txPrevisoesLeao.setText("Leão: Divirta-se e aproveite bons momentos.");
+    txPrevisoesVirgem.setText("Virgem: Reserve um tempo para descansar.");
+    txPrevisoesLibra.setText("Libra: Um momento de lazer fará bem ao seu dia.");
+    txPrevisoesEscorpiao.setText("Escorpião: Um programa diferente pode tornar seu sábado especial.");
+    txPrevisoesSargitario.setText("Sagitário: Um passeio pode renovar suas energias.");
+    txPrevisoesCapricornio.setText("Capricórnio: Permita-se descansar e aproveitar o momento.");
+    txPrevisoesAquario.setText("Aquário: Novas experiências podem deixar seu sábado divertido.");
+    txPrevisoesPeixes.setText("Peixes: Faça algo que você realmente gosta.");
+    break;
 
-    case 7: // Domingo
-        txPrevisaoAries.setText("Áries: Descanse e prepare-se para uma nova semana.");
-        txPrevisaoTouro.setText("Touro: Recarregue as energias para a próxima semana.");
-        txPrevisaoGemeos.setText("Gêmeos: Organize seus planos para a próxima semana.");
-        txPrevisaoCancer.setText("Câncer: Descanse e prepare-se para uma nova semana.");
-        txPrevisaoLeao.setText("Leão: Planeje tranquilamente os próximos dias.");
-        txPrevisaoVirgem.setText("Virgem: Planeje tranquilamente os próximos dias.");
-        txPrevisaoLibra.setText("Libra: Termine a semana com tranquilidade.");
-        txPrevisaoEscorpiao.setText("Escorpião: Reflita sobre seus próximos objetivos.");
-        txPrevisaoSagitario.setText("Sagitário: Prepare-se para uma nova semana.");
-        txPrevisaoCapricornio.setText("Capricórnio: Organize suas prioridades para a próxima semana.");
-        txPrevisaoAquario.setText("Aquário: Relaxe e aproveite o domingo.");
-        txPrevisaoPeixes.setText("Peixes: Termine a semana com tranquilidade.");
-        break;
+case 7: // Domingo
+    txPrevisoesAries.setText("Áries: Descanse e prepare-se para uma nova semana.");
+    txPrevisoesTouro.setText("Touro: Recarregue as energias para a próxima semana.");
+    txPrevisoesGemeos.setText("Gêmeos: Organize seus planos para a próxima semana.");
+    txPrevisoesCancer.setText("Câncer: Descanse e prepare-se para uma nova semana.");
+    txPrevisoesLeao.setText("Leão: Planeje tranquilamente os próximos dias.");
+    txPrevisoesVirgem.setText("Virgem: Planeje tranquilamente os próximos dias.");
+    txPrevisoesLibra.setText("Libra: Termine a semana com tranquilidade.");
+    txPrevisoesEscorpiao.setText("Escorpião: Reflita sobre seus próximos objetivos.");
+    txPrevisoesSargitario.setText("Sagitário: Prepare-se para uma nova semana.");
+    txPrevisoesCapricornio.setText("Capricórnio: Organize suas prioridades para a próxima semana.");
+    txPrevisoesAquario.setText("Aquário: Relaxe e aproveite o domingo.");
+    txPrevisoesPeixes.setText("Peixes: Aproveite o domingo para descansar e recarregar as energias.");
+    break;
      
      
      
@@ -200,14 +204,716 @@ public class Signos extends javax.swing.JFrame {
     
     }
     
+    public void  PreencherMensagem(){
+//capturar dia da semana 
+int diaSemana = LocalDate.now() .getDayOfWeek().getValue();
+
+//condicional
+switch (diaSemana){
+
+case 1: // Segunda-feira
+    txMensagemAries.setText("Áries: Comece a semana com energia e confiança.");
+    txMensagemTouro.setText("Touro: Tenha paciência e avance no seu próprio ritmo.");
+    txMensagemGemeos.setText("Gêmeos: Uma nova ideia pode tornar seu dia mais interessante.");
+    txMensagemCancer.setText("Câncer: Valorize os momentos de tranquilidade.");
+    txMensagemLeao.setText("Leão: Sua confiança pode abrir novas oportunidades.");
+    txMensagemVirgem.setText("Virgem: Organize suas tarefas e mantenha o foco.");
+    txMensagemLibra.setText("Libra: Busque equilíbrio entre suas responsabilidades.");
+    txMensagemEscorpiao.setText("Escorpião: Confie mais na sua intuição.");
+    txMensagemSargitario.setText("Sagitário: Mantenha o otimismo diante dos desafios.");
+    txMensagemCapricornio.setText("Capricórnio: Pequenos esforços podem gerar grandes resultados.");
+    txMensagemAquario.setText("Aquário: Uma ideia diferente pode fazer a diferença.");
+    txMensagemPeixes.setText("Peixes: Escute seus sentimentos, mas mantenha os pés no chão.");
+    break;
+
+case 2: // Terça-feira
+    txMensagemAries.setText("Áries: Não tenha medo de tomar a iniciativa.");
+    txMensagemTouro.setText("Touro: Um pouco de persistência será importante hoje.");
+    txMensagemGemeos.setText("Gêmeos: Aproveite sua criatividade para resolver problemas.");
+    txMensagemCancer.setText("Câncer: Uma conversa sincera pode melhorar seu dia.");
+    txMensagemLeao.setText("Leão: Mostre suas habilidades sem deixar de ouvir os outros.");
+    txMensagemVirgem.setText("Virgem: Concentre-se em uma tarefa de cada vez.");
+    txMensagemLibra.setText("Libra: Evite conflitos desnecessários e mantenha a calma.");
+    txMensagemEscorpiao.setText("Escorpião: Use sua determinação para superar um obstáculo.");
+   txMensagemSargitario.setText("Sagitário: Esteja aberto a novas experiências.");
+    txMensagemCapricornio.setText("Capricórnio: Continue firme em direção aos seus objetivos.");
+    txMensagemAquario.setText("Aquário: Compartilhe suas ideias e inspire outras pessoas.");
+    txMensagemPeixes.setText("Peixes: Reserve um momento para cuidar de si mesmo.");
+    break;
+
+case 3: // Quarta-feira
+    txMensagemAries.setText("Áries: Pense antes de agir e evite decisões impulsivas.");
+    txMensagemTouro.setText("Touro: Mantenha a calma mesmo diante de imprevistos.");
+    txMensagemGemeos.setText("Gêmeos: Uma boa conversa pode trazer novos aprendizados.");
+    txMensagemCancer.setText("Câncer: Procure estar perto de quem faz você se sentir bem.");
+    txMensagemLeao.setText("Leão: Sua determinação será importante para superar um desafio.");
+    txMensagemVirgem.setText("Virgem: Não deixe pequenos detalhes tirarem sua tranquilidade.");
+    txMensagemLibra.setText("Libra: Procure tomar decisões pensando no que realmente importa.");
+    txMensagemEscorpiao.setText("Escorpião: Evite guardar preocupações desnecessárias.");
+    txMensagemSargitario.setText("Sagitário: Uma mudança de perspectiva pode ajudar.");
+    txMensagemCapricornio.setText("Capricórnio: Não tenha pressa, resultados levam tempo.");
+    txMensagemAquario.setText("Aquário: Permita-se experimentar algo diferente.");
+    txMensagemPeixes.setText("Peixes: Sua sensibilidade pode ajudar alguém hoje.");
+    break;
+
+case 4: // Quinta-feira
+    txMensagemAries.setText("Áries: Encare os desafios com coragem e determinação.");
+    txMensagemTouro.setText("Touro: Valorize aquilo que você já conquistou.");
+    txMensagemGemeos.setText("Gêmeos: Use sua comunicação para aproximar pessoas.");
+    txMensagemCancer.setText("Câncer: Um gesto de carinho pode transformar o dia de alguém.");
+    txMensagemLeao.setText("Leão: Confie no seu potencial e continue avançando.");
+    txMensagemVirgem.setText("Virgem: Seu esforço pode começar a apresentar resultados.");
+    txMensagemLibra.setText("Libra: Uma atitude equilibrada pode evitar um problema.");
+    txMensagemEscorpiao.setText("Escorpião: Mantenha o foco e não desista facilmente.");
+    txMensagemSargitario.setText("Sagitário: Aproveite uma oportunidade para aprender algo novo.");
+    txMensagemCapricornio.setText("Capricórnio: Seu comprometimento será reconhecido.");
+    txMensagemAquario.setText("Aquário: Não tenha medo de pensar fora do comum.");
+    txMensagemPeixes.setText("Peixes: Uma atitude positiva pode melhorar seu dia.");
+    break;
+
+case 5: // Sexta-feira
+    txMensagemAries.setText("Áries: Celebre suas pequenas conquistas da semana.");
+    txMensagemTouro.setText("Touro: Diminua o ritmo e aproveite momentos agradáveis.");
+    txMensagemGemeos.setText("Gêmeos: Aproveite o dia para conversar e se divertir.");
+    txMensagemCancer.setText("Câncer: Valorize a companhia das pessoas que você gosta.");
+    txMensagemLeao.setText("Leão: Aproveite sua energia para fazer algo que gosta.");
+    txMensagemVirgem.setText("Virgem: Termine a semana com a sensação de dever cumprido.");
+    txMensagemLibra.setText("Libra: Aproveite o dia para relaxar e se divertir.");
+    txMensagemEscorpiao.setText("Escorpião: Deixe algumas preocupações para a próxima semana.");
+    txMensagemSargitario.setText("Sagitário: Um momento de diversão pode renovar suas energias.");
+    txMensagemCapricornio.setText("Capricórnio: Finalize suas pendências antes de descansar.");
+    txMensagemAquario.setText("Aquário: Faça algo diferente para sair da rotina.");
+    txMensagemPeixes.setText("Peixes: Permita-se relaxar e aproveitar o momento.");
+    break;
+
+case 6: // Sábado
+    txMensagemAries.setText("Áries: Aproveite o sábado para fazer algo que gosta.");
+    txMensagemTouro.setText("Touro: Desfrute de momentos tranquilos e agradáveis.");
+    txMensagemGemeos.setText("Gêmeos: Um passeio pode trazer boas lembranças.");
+    txMensagemCancer.setText("Câncer: Dedique tempo para sua família e para você.");
+    txMensagemLeao.setText("Leão: Divirta-se e aproveite para criar novas memórias.");
+    txMensagemVirgem.setText("Virgem: Permita-se descansar sem pensar nas obrigações.");
+    txMensagemLibra.setText("Libra: Um momento de lazer pode trazer equilíbrio.");
+    txMensagemEscorpiao.setText("Escorpião: Aproveite o dia para fazer algo inesperado.");
+    txMensagemSargitario.setText("Sagitário: Uma aventura pode tornar seu sábado especial.");
+    txMensagemCapricornio.setText("Capricórnio: Deixe as preocupações de lado por um tempo.");
+    txMensagemAquario.setText("Aquário: Experimente algo novo e saia da rotina.");
+    txMensagemPeixes.setText("Peixes: Faça algo que traga paz e felicidade.");
+    break;
+
+case 7: // Domingo
+    txMensagemAries.setText("Áries: Descanse e prepare-se para novos desafios.");
+    txMensagemTouro.setText("Touro: Aproveite o domingo para recarregar suas energias.");
+    txMensagemGemeos.setText("Gêmeos: Organize seus pensamentos para a próxima semana.");
+    txMensagemCancer.setText("Câncer: Aproveite a tranquilidade do domingo.");
+    txMensagemLeao.setText("Leão: Reflita sobre suas conquistas e novos objetivos.");
+    txMensagemVirgem.setText("Virgem: Organize seus planos sem se cobrar demais.");
+    txMensagemLibra.setText("Libra: Encontre um momento de paz antes da nova semana.");
+    txMensagemEscorpiao.setText("Escorpião: Reflita sobre o que você deseja conquistar.");
+    txMensagemSargitario.setText("Sagitário: Mantenha o entusiasmo para a semana que começa.");
+    txMensagemCapricornio.setText("Capricórnio: Planeje seus próximos passos com tranquilidade.");
+    txMensagemAquario.setText("Aquário: Relaxe e aproveite sua liberdade.");
+    txMensagemPeixes.setText("Peixes: Termine a semana com pensamentos positivos.");
+    break;
+
+
+//Assim, cada `case` representa **um dia da semana**, e dentro dele os 12 `txMensagem...` recebem uma mensagem específica para cada signo.
+
+
+
+
+}
+
+}
     
+    public void CorrigirAreasdeTexto (){
+    //CORRIGIR MENSAGEM
+    // MENSAGENS
+txMensagemAries.setLineWrap(true);
+txMensagemAries.setWrapStyleWord(true);
+
+txMensagemTouro.setLineWrap(true);
+txMensagemTouro.setWrapStyleWord(true);
+
+txMensagemGemeos.setLineWrap(true);
+txMensagemGemeos.setWrapStyleWord(true);
+
+txMensagemCancer.setLineWrap(true);
+txMensagemCancer.setWrapStyleWord(true);
+
+txMensagemLeao.setLineWrap(true);
+txMensagemLeao.setWrapStyleWord(true);
+
+txMensagemVirgem.setLineWrap(true);
+txMensagemVirgem.setWrapStyleWord(true);
+
+txMensagemLibra.setLineWrap(true);
+txMensagemLibra.setWrapStyleWord(true);
+
+txMensagemEscorpiao.setLineWrap(true);
+txMensagemEscorpiao.setWrapStyleWord(true);
+
+txMensagemSargitario.setLineWrap(true);
+txMensagemSargitario.setWrapStyleWord(true);
+
+txMensagemCapricornio.setLineWrap(true);
+txMensagemCapricornio.setWrapStyleWord(true);
+
+txMensagemAquario.setLineWrap(true);
+txMensagemAquario.setWrapStyleWord(true);
+
+txMensagemPeixes.setLineWrap(true);
+txMensagemPeixes.setWrapStyleWord(true);
+
+
+// PREVISÕES
+txPrevisoesAries.setLineWrap(true);
+txPrevisoesAries.setWrapStyleWord(true);
+
+txPrevisoesTouro.setLineWrap(true);
+txPrevisoesTouro.setWrapStyleWord(true);
+
+txPrevisoesGemeos.setLineWrap(true);
+txPrevisoesGemeos.setWrapStyleWord(true);
+
+txPrevisoesCancer.setLineWrap(true);
+txPrevisoesCancer.setWrapStyleWord(true);
+
+txPrevisoesLeao.setLineWrap(true);
+txPrevisoesLeao.setWrapStyleWord(true);
+
+txPrevisoesVirgem.setLineWrap(true);
+txPrevisoesVirgem.setWrapStyleWord(true);
+
+txPrevisoesLibra.setLineWrap(true);
+txPrevisoesLibra.setWrapStyleWord(true);
+
+txPrevisoesEscorpiao.setLineWrap(true);
+txPrevisoesEscorpiao.setWrapStyleWord(true);
+
+txPrevisoesSargitario.setLineWrap(true);
+txPrevisoesSargitario.setWrapStyleWord(true);
+
+txPrevisoesCapricornio.setLineWrap(true);
+txPrevisoesCapricornio.setWrapStyleWord(true);
+
+txPrevisoesAquario.setLineWrap(true);
+txPrevisoesAquario.setWrapStyleWord(true);
+
+txPrevisoesPeixes.setLineWrap(true);
+txPrevisoesPeixes.setWrapStyleWord(true);
+
+
+// PONTOS FORTES
+txFortesAries.setLineWrap(true);
+txFortesAries.setWrapStyleWord(true);
+
+txFortesTouro.setLineWrap(true);
+txFortesTouro.setWrapStyleWord(true);
+
+txFortesGemeos.setLineWrap(true);
+txFortesGemeos.setWrapStyleWord(true);
+
+txFortesCancer.setLineWrap(true);
+txFortesCancer.setWrapStyleWord(true);
+
+txFortesLeao.setLineWrap(true);
+txFortesLeao.setWrapStyleWord(true);
+
+txFortesVirgem.setLineWrap(true);
+txFortesVirgem.setWrapStyleWord(true);
+
+txFortesLibra.setLineWrap(true);
+txFortesLibra.setWrapStyleWord(true);
+
+txFortesEscorpiao.setLineWrap(true);
+txFortesEscorpiao.setWrapStyleWord(true);
+
+txFortesSargitario.setLineWrap(true);
+txFortesSargitario.setWrapStyleWord(true);
+
+txFortesCapricornio.setLineWrap(true);
+txFortesCapricornio.setWrapStyleWord(true);
+
+txFortesAquario.setLineWrap(true);
+txFortesAquario.setWrapStyleWord(true);
+
+txFortesPeixes.setLineWrap(true);
+txFortesPeixes.setWrapStyleWord(true);
+
+
+// PONTOS A MELHORAR
+txMelhoriasAries.setLineWrap(true);
+txMelhoriasAries.setWrapStyleWord(true);
+
+txMelhoriasTouro.setLineWrap(true);
+txMelhoriasTouro.setWrapStyleWord(true);
+
+txMelhoriasGemeos.setLineWrap(true);
+txMelhoriasGemeos.setWrapStyleWord(true);
+
+txMelhoriasCancer.setLineWrap(true);
+txMelhoriasCancer.setWrapStyleWord(true);
+
+txMelhoriasLeao.setLineWrap(true);
+txMelhoriasLeao.setWrapStyleWord(true);
+
+txMelhoriasVirgem.setLineWrap(true);
+txMelhoriasVirgem.setWrapStyleWord(true);
+
+txMelhoriasLibra.setLineWrap(true);
+txMelhoriasLibra.setWrapStyleWord(true);
+
+txMelhoriasEscorpiao.setLineWrap(true);
+txMelhoriasEscorpiao.setWrapStyleWord(true);
+
+txMelhoriasSargitario.setLineWrap(true);
+txMelhoriasSargitario.setWrapStyleWord(true);
+
+txMelhoriasCapricornio.setLineWrap(true);
+txMelhoriasCapricornio.setWrapStyleWord(true);
+
+txMelhoriasAquario.setLineWrap(true);
+txMelhoriasAquario.setWrapStyleWord(true);
+
+txMelhoriasPeixes.setLineWrap(true);
+txMelhoriasPeixes.setWrapStyleWord(true); 
     
+    }
     
+    public void CalcularSigno(){
+    //captuarar dados da comboBox
+    int dia = Integer. parseInt(cbDia.getSelectedItem().toString());
+    String mes= cbMes.getSelectedItem(). toString();
+    //Variavel que quarda a imagem do signo
+    ImageIcon imagem = null;
     
+    //Verificar dia e mes com if e if else 
+    if ((mes.equalsIgnoreCase("Março")&& dia >= 21)||(mes.equalsIgnoreCase("Abril")&& dia<=19)){
+       signo.setText("Áries");
+       imagem =(ImageIcon) imgSignoAries.getIcon(); //captura sua imagem
+       
+       }else if ((mes.equalsIgnoreCase("Janeiro")&& dia >= 20)||(mes.equalsIgnoreCase("Fevereiro")&& dia<=18)){
+       signo.setText("Aquário");
+       imagem =(ImageIcon) imgSignoAquario.getIcon(); //captura sua imagem
+       
+       }else if ((mes.equalsIgnoreCase("Junho")&& dia >= 21)||(mes.equalsIgnoreCase("Julho")&& dia<=22)){
+       signo.setText("Câncer");
+       imagem =(ImageIcon) imgSignoCancer.getIcon(); //captura sua imagem
+       
+       }else if ((mes.equalsIgnoreCase("Outubro")&& dia >= 23)||(mes.equalsIgnoreCase("Novembro")&& dia<=21)){
+       signo.setText("Escorpião");
+       imagem =(ImageIcon) imgSignoEscorpiao.getIcon(); //captura sua imagem
+       
+       }else if ((mes.equalsIgnoreCase("Maio")&& dia >= 21)||(mes.equalsIgnoreCase("Junho")&& dia<=20)){
+       signo.setText("Gêmeos");
+       imagem =(ImageIcon) imgSignoGemeos.getIcon(); //captura sua imagem
+       
+       }else if ((mes.equalsIgnoreCase("Julho")&& dia >= 23)||(mes.equalsIgnoreCase("Agosto")&& dia<=22)){
+       signo.setText("Leão");
+       imagem =(ImageIcon) imgSignoLeao.getIcon(); //captura sua imagem
+       
+       }else if ((mes.equalsIgnoreCase("Setembro")&& dia >= 23)||(mes.equalsIgnoreCase("Outubro")&& dia<=22)){
+       signo.setText("Libra");
+       imagem =(ImageIcon) imgSignoLibra.getIcon(); //captura sua imagem
+       
+       }else if ((mes.equalsIgnoreCase("Fevereiro")&& dia >= 19)||(mes.equalsIgnoreCase("Março")&& dia<=20)){
+       signo.setText("Peixes");
+       imagem =(ImageIcon) imgSignoEscorpiao.getIcon(); //captura sua imagem
+       
+       }else if ((mes.equalsIgnoreCase("Novembro")&& dia >= 22)||(mes.equalsIgnoreCase("Dezembro")&& dia<=21)){
+       signo.setText("Sargitário");
+       imagem =(ImageIcon) imgSignoSargitario.getIcon(); //captura sua imagem
+       
+       }else if ((mes.equalsIgnoreCase("Abril")&& dia >= 23)||(mes.equalsIgnoreCase("Maio")&& dia<=21)){
+       signo.setText("Touro");
+       imagem =(ImageIcon) imgSignoTouro.getIcon(); //captura sua imagem
+       
+       }else if ((mes.equalsIgnoreCase("Agosto")&& dia >= 23)||(mes.equalsIgnoreCase("Setembro")&& dia<=21)){
+       signo.setText("Virgem");
+              imagem =(ImageIcon) imgSignoVirgem.getIcon(); //captura sua imagem
+       
+       }else if ((mes.equalsIgnoreCase("Dezembro")&& dia >= 23)||(mes.equalsIgnoreCase("Janeiro")&& dia<=22)){
+       signo.setText("Capricórnio");
+       imagem =(ImageIcon) imgSignoCapricornio.getIcon(); //captura sua imagem
+    } 
+    //Para substituir o botam azul, substitua btnSigno pelo nome dele: 
+    btnSigno.setIcon(imagem);
     
+    }//fim da função
     
-    
-    
+   public void CalcularCompatibilidade(){
+      String signo1 = cbSigno1.getSelectedItem(). toString();
+      String signo2 = cbSigno2.getSelectedItem(). toString(); 
+       
+       // LIMPA O RESULTADO ANTERIOR
+tfCompatibilidade.setText("");
+
+
+// ==================== ÁRIES ====================
+tfCompatibilidade.setText("");
+
+if (signo1.equalsIgnoreCase("Áries ♈")) {
+
+    if (signo2.equalsIgnoreCase("Áries ♈")) {
+        tfCompatibilidade.setText("100% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Touro ♉")) {
+        tfCompatibilidade.setText("70% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Gêmeos ♊")) {
+        tfCompatibilidade.setText("80% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Câncer ♋")) {
+        tfCompatibilidade.setText("50% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Leão ♌")) {
+        tfCompatibilidade.setText("90% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Virgem ♍")) {
+        tfCompatibilidade.setText("45% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Libra ♎")) {
+        tfCompatibilidade.setText("65% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Escorpião ♏")) {
+        tfCompatibilidade.setText("55% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Sagitário ♐")) {
+        tfCompatibilidade.setText("95% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Capricórnio ♑")) {
+        tfCompatibilidade.setText("50% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Aquário ♒")) {
+        tfCompatibilidade.setText("85% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Peixes ♓")) {
+        tfCompatibilidade.setText("55% compatibilidade!");
+    }
+
+    // ==================== TOURO ====================
+} else if (signo1.equalsIgnoreCase("Touro ♉")) {
+
+    if (signo2.equalsIgnoreCase("Áries ♈")) {
+        tfCompatibilidade.setText("70% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Touro ♉")) {
+        tfCompatibilidade.setText("100% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Gêmeos ♊")) {
+        tfCompatibilidade.setText("55% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Câncer ♋")) {
+        tfCompatibilidade.setText("85% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Leão ♌")) {
+        tfCompatibilidade.setText("60% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Virgem ♍")) {
+        tfCompatibilidade.setText("95% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Libra ♎")) {
+        tfCompatibilidade.setText("70% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Escorpião ♏")) {
+        tfCompatibilidade.setText("80% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Sagitário ♐")) {
+        tfCompatibilidade.setText("55% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Capricórnio ♑")) {
+        tfCompatibilidade.setText("90% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Aquário ♒")) {
+        tfCompatibilidade.setText("50% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Peixes ♓")) {
+        tfCompatibilidade.setText("80% compatibilidade!");
+    }
+
+    // ==================== GÊMEOS ====================
+} else if (signo1.equalsIgnoreCase("Gêmeos ♊")) {
+
+    if (signo2.equalsIgnoreCase("Áries ♈")) {
+        tfCompatibilidade.setText("80% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Touro ♉")) {
+        tfCompatibilidade.setText("55% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Gêmeos ♊")) {
+        tfCompatibilidade.setText("100% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Câncer ♋")) {
+        tfCompatibilidade.setText("60% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Leão ♌")) {
+        tfCompatibilidade.setText("85% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Virgem ♍")) {
+        tfCompatibilidade.setText("60% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Libra ♎")) {
+        tfCompatibilidade.setText("95% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Escorpião ♏")) {
+        tfCompatibilidade.setText("50% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Sagitário ♐")) {
+        tfCompatibilidade.setText("80% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Capricórnio ♑")) {
+        tfCompatibilidade.setText("45% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Aquário ♒")) {
+        tfCompatibilidade.setText("90% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Peixes ♓")) {
+        tfCompatibilidade.setText("55% compatibilidade!");
+    }
+
+    // ==================== CÂNCER ====================
+} else if (signo1.equalsIgnoreCase("Câncer ♋")) {
+
+    if (signo2.equalsIgnoreCase("Áries ♈")) {
+        tfCompatibilidade.setText("50% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Touro ♉")) {
+        tfCompatibilidade.setText("85% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Gêmeos ♊")) {
+        tfCompatibilidade.setText("60% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Câncer ♋")) {
+        tfCompatibilidade.setText("100% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Leão ♌")) {
+        tfCompatibilidade.setText("65% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Virgem ♍")) {
+        tfCompatibilidade.setText("80% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Libra ♎")) {
+        tfCompatibilidade.setText("55% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Escorpião ♏")) {
+        tfCompatibilidade.setText("95% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Sagitário ♐")) {
+        tfCompatibilidade.setText("50% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Capricórnio ♑")) {
+        tfCompatibilidade.setText("75% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Aquário ♒")) {
+        tfCompatibilidade.setText("45% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Peixes ♓")) {
+        tfCompatibilidade.setText("95% compatibilidade!");
+    }
+
+        // ==================== LEÃO ====================
+
+} else if (signo1.equalsIgnoreCase("Leão ♌")) {
+
+    if (signo2.equalsIgnoreCase("Áries ♈")) {
+        tfCompatibilidade.setText("90% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Touro ♉")) {
+        tfCompatibilidade.setText("60% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Gêmeos ♊")) {
+        tfCompatibilidade.setText("85% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Câncer ♋")) {
+        tfCompatibilidade.setText("65% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Leão ♌")) {
+        tfCompatibilidade.setText("100% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Virgem ♍")) {
+        tfCompatibilidade.setText("55% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Libra ♎")) {
+        tfCompatibilidade.setText("90% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Escorpião ♏")) {
+        tfCompatibilidade.setText("60% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Sagitário ♐")) {
+        tfCompatibilidade.setText("95% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Capricórnio ♑")) {
+        tfCompatibilidade.setText("55% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Aquário ♒")) {
+        tfCompatibilidade.setText("70% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Peixes ♓")) {
+        tfCompatibilidade.setText("60% compatibilidade!");
+    }
+
+        // ==================== VIRGEM ====================
+
+} else if (signo1.equalsIgnoreCase("Virgem ♍")) {
+
+    if (signo2.equalsIgnoreCase("Áries ♈")) {
+        tfCompatibilidade.setText("45% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Touro ♉")) {
+        tfCompatibilidade.setText("95% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Gêmeos ♊")) {
+        tfCompatibilidade.setText("60% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Câncer ♋")) {
+        tfCompatibilidade.setText("80% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Leão ♌")) {
+        tfCompatibilidade.setText("55% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Virgem ♍")) {
+        tfCompatibilidade.setText("100% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Libra ♎")) {
+        tfCompatibilidade.setText("65% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Escorpião ♏")) {
+        tfCompatibilidade.setText("85% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Sagitário ♐")) {
+        tfCompatibilidade.setText("50% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Capricórnio ♑")) {
+        tfCompatibilidade.setText("95% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Aquário ♒")) {
+        tfCompatibilidade.setText("55% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Peixes ♓")) {
+        tfCompatibilidade.setText("80% compatibilidade!");
+    }
+
+        // ==================== LIBRA ====================
+
+} else if (signo1.equalsIgnoreCase("Libra ♎")) {
+
+    if (signo2.equalsIgnoreCase("Áries ♈")) {
+        tfCompatibilidade.setText("65% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Touro ♉")) {
+        tfCompatibilidade.setText("70% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Gêmeos ♊")) {
+        tfCompatibilidade.setText("95% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Câncer ♋")) {
+        tfCompatibilidade.setText("55% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Leão ♌")) {
+        tfCompatibilidade.setText("90% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Virgem ♍")) {
+        tfCompatibilidade.setText("65% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Libra ♎")) {
+        tfCompatibilidade.setText("100% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Escorpião ♏")) {
+        tfCompatibilidade.setText("60% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Sagitário ♐")) {
+        tfCompatibilidade.setText("85% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Capricórnio ♑")) {
+        tfCompatibilidade.setText("55% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Aquário ♒")) {
+        tfCompatibilidade.setText("95% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Peixes ♓")) {
+        tfCompatibilidade.setText("70% compatibilidade!");
+    }
+
+        // ==================== ESCORPIÃO ====================
+
+} else if (signo1.equalsIgnoreCase("Escorpião ♏")) {
+
+    if (signo2.equalsIgnoreCase("Áries ♈")) {
+        tfCompatibilidade.setText("55% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Touro ♉")) {
+        tfCompatibilidade.setText("80% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Gêmeos ♊")) {
+        tfCompatibilidade.setText("50% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Câncer ♋")) {
+        tfCompatibilidade.setText("95% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Leão ♌")) {
+        tfCompatibilidade.setText("60% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Virgem ♍")) {
+        tfCompatibilidade.setText("85% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Libra ♎")) {
+        tfCompatibilidade.setText("60% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Escorpião ♏")) {
+        tfCompatibilidade.setText("100% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Sagitário ♐")) {
+        tfCompatibilidade.setText("55% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Capricórnio ♑")) {
+        tfCompatibilidade.setText("85% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Aquário ♒")) {
+        tfCompatibilidade.setText("50% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Peixes ♓")) {
+        tfCompatibilidade.setText("95% compatibilidade!");
+    }
+
+        // ==================== SARGITÁRIO ====================
+
+} else if (signo1.equalsIgnoreCase("Sagitário ♐")) {
+
+    if (signo2.equalsIgnoreCase("Áries ♈")) {
+        tfCompatibilidade.setText("95% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Touro ♉")) {
+        tfCompatibilidade.setText("55% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Gêmeos ♊")) {
+        tfCompatibilidade.setText("80% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Câncer ♋")) {
+        tfCompatibilidade.setText("50% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Leão ♌")) {
+        tfCompatibilidade.setText("95% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Virgem ♍")) {
+        tfCompatibilidade.setText("50% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Libra ♎")) {
+        tfCompatibilidade.setText("85% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Escorpião ♏")) {
+        tfCompatibilidade.setText("55% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Sagitário ♐")) {
+        tfCompatibilidade.setText("100% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Capricórnio ♑")) {
+        tfCompatibilidade.setText("55% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Aquário ♒")) {
+        tfCompatibilidade.setText("85% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Peixes ♓")) {
+        tfCompatibilidade.setText("60% compatibilidade!");
+    }
+
+        // ==================== CAPRICÓNIO ====================
+
+} else if (signo1.equalsIgnoreCase("Capricórnio ♑")) {
+
+    if (signo2.equalsIgnoreCase("Áries ♈")) {
+        tfCompatibilidade.setText("50% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Touro ♉")) {
+        tfCompatibilidade.setText("90% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Gêmeos ♊")) {
+        tfCompatibilidade.setText("45% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Câncer ♋")) {
+        tfCompatibilidade.setText("75% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Leão ♌")) {
+        tfCompatibilidade.setText("55% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Virgem ♍")) {
+        tfCompatibilidade.setText("95% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Libra ♎")) {
+        tfCompatibilidade.setText("55% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Escorpião ♏")) {
+        tfCompatibilidade.setText("85% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Sagitário ♐")) {
+        tfCompatibilidade.setText("55% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Capricórnio ♑")) {
+        tfCompatibilidade.setText("100% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Aquário ♒")) {
+        tfCompatibilidade.setText("60% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Peixes ♓")) {
+        tfCompatibilidade.setText("85% compatibilidade!");
+    }
+
+        // ==================== AQUÁRIO ====================
+
+} else if (signo1.equalsIgnoreCase("Aquário ♒")) {
+
+    if (signo2.equalsIgnoreCase("Áries ♈")) {
+        tfCompatibilidade.setText("85% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Touro ♉")) {
+        tfCompatibilidade.setText("50% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Gêmeos ♊")) {
+        tfCompatibilidade.setText("90% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Câncer ♋")) {
+        tfCompatibilidade.setText("45% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Leão ♌")) {
+        tfCompatibilidade.setText("70% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Virgem ♍")) {
+        tfCompatibilidade.setText("55% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Libra ♎")) {
+        tfCompatibilidade.setText("95% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Escorpião ♏")) {
+        tfCompatibilidade.setText("50% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Sagitário ♐")) {
+        tfCompatibilidade.setText("85% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Capricórnio ♑")) {
+        tfCompatibilidade.setText("60% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Aquário ♒")) {
+        tfCompatibilidade.setText("100% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Peixes ♓")) {
+        tfCompatibilidade.setText("65% compatibilidade!");
+    }
+
+        // ==================== PEIXES ====================
+
+} else if (signo1.equalsIgnoreCase("Peixes ♓")) {
+
+    if (signo2.equalsIgnoreCase("Áries ♈")) {
+        tfCompatibilidade.setText("55% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Touro ♉")) {
+        tfCompatibilidade.setText("80% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Gêmeos ♊")) {
+        tfCompatibilidade.setText("55% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Câncer ♋")) {
+        tfCompatibilidade.setText("95% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Leão ♌")) {
+        tfCompatibilidade.setText("60% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Virgem ♍")) {
+        tfCompatibilidade.setText("80% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Libra ♎")) {
+        tfCompatibilidade.setText("70% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Escorpião ♏")) {
+        tfCompatibilidade.setText("95% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Sagitário ♐")) {
+        tfCompatibilidade.setText("60% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Capricórnio ♑")) {
+        tfCompatibilidade.setText("85% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Aquário ♒")) {
+        tfCompatibilidade.setText("65% compatibilidade!");
+    } else if (signo2.equalsIgnoreCase("Peixes ♓")) {
+        tfCompatibilidade.setText("100% compatibilidade!");
+    }
+}
+       
+       
+       
+       
+       
+   }//fim da função 
     
     
     
@@ -637,7 +1343,7 @@ public class Signos extends javax.swing.JFrame {
         pfortesSargitario = new javax.swing.JLabel();
         pmelhoriasSargitario = new javax.swing.JLabel();
         jScrollPane31 = new javax.swing.JScrollPane();
-        txFortesSargitariov = new javax.swing.JTextArea();
+        txFortesSargitario = new javax.swing.JTextArea();
         jScrollPane32 = new javax.swing.JScrollPane();
         txMelhoriasSargitario = new javax.swing.JTextArea();
         fundoSargitario = new javax.swing.JLabel();
@@ -824,7 +1530,7 @@ public class Signos extends javax.swing.JFrame {
                 .addContainerGap(99, Short.MAX_VALUE))
         );
 
-        inicio.add(areaResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 140, 330, 580));
+        inicio.add(areaResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 90, 330, 580));
 
         areaDescobrirSigno.setPreferredSize(new java.awt.Dimension(200, 200));
 
@@ -906,7 +1612,7 @@ public class Signos extends javax.swing.JFrame {
                 .addContainerGap(21, Short.MAX_VALUE))
         );
 
-        inicio.add(areaDescobrirSigno, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 410, 250));
+        inicio.add(areaDescobrirSigno, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, 410, 250));
 
         tituloCompatibilidade.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         tituloCompatibilidade.setText("Compatibilidade");
@@ -923,6 +1629,7 @@ public class Signos extends javax.swing.JFrame {
 
         btnCalular.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnCalular.setText("Calcular");
+        btnCalular.addActionListener(this::btnCalularActionPerformed);
 
         javax.swing.GroupLayout areaCompatibilidadeLayout = new javax.swing.GroupLayout(areaCompatibilidade);
         areaCompatibilidade.setLayout(areaCompatibilidadeLayout);
@@ -966,7 +1673,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGap(29, 29, 29))
         );
 
-        inicio.add(areaCompatibilidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 470, 410, 240));
+        inicio.add(areaCompatibilidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 430, 410, 240));
 
         fundoInicio.setIcon(new javax.swing.ImageIcon("C:\\Users\\ArthurGiuvannucci\\Documents\\ProjetoAppHoroscopo\\Horospoco\\src\\main\\resources\\assets\\81XnKshePmL._AC_SL1200_.jpg")); // NOI18N
         inicio.add(fundoInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, -1, -1));
@@ -1054,7 +1761,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGap(39, 39, 39)
                 .addComponent(imgSignoAries, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27)
-                .addComponent(tituloAries, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE)
+                .addComponent(tituloAries, javax.swing.GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(areaInformacoesAriesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tfPeriodoAries, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1079,7 +1786,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGap(41, 41, 41))
         );
 
-        aries.add(areaInformacoesAries, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 240, 600));
+        aries.add(areaInformacoesAries, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 240, 570));
 
         tituloEnergiaAries.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         tituloEnergiaAries.setText("Energia do Dia");
@@ -1095,6 +1802,14 @@ public class Signos extends javax.swing.JFrame {
 
         sorteAries.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         sorteAries.setText("Sorte:");
+
+        tfAmorAries.setText("78% ");
+
+        tfTrabalhoAries.setText("88%");
+
+        tfSaudeAries.setText("82%");
+
+        tfSorteAries.setText(" 75%");
 
         javax.swing.GroupLayout areaEnergiaAriesLayout = new javax.swing.GroupLayout(areaEnergiaAries);
         areaEnergiaAries.setLayout(areaEnergiaAriesLayout);
@@ -1144,7 +1859,7 @@ public class Signos extends javax.swing.JFrame {
                 .addContainerGap(40, Short.MAX_VALUE))
         );
 
-        aries.add(areaEnergiaAries, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 90, 350, 300));
+        aries.add(areaEnergiaAries, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 60, 350, 300));
 
         tituloMensagemAries.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         tituloMensagemAries.setText("Menagem do Dia:");
@@ -1186,7 +1901,7 @@ public class Signos extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        aries.add(areaMensagemAries, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 420, 320, 240));
+        aries.add(areaMensagemAries, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 420, 320, 250));
 
         caracteristicasAries.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         caracteristicasAries.setText("Características");
@@ -1204,7 +1919,7 @@ public class Signos extends javax.swing.JFrame {
 
         txMelhoriasAries.setColumns(20);
         txMelhoriasAries.setRows(5);
-        txMelhoriasAries.setText("impulsividade, impaciência, agressividade, teimosia e \ndificuldade em esperar.");
+        txMelhoriasAries.setText("impulsividade, impaciência, agressividade, teimosia e dificuldade em esperar.");
         jScrollPane4.setViewportView(txMelhoriasAries);
 
         javax.swing.GroupLayout areaCaracteristicasAriesLayout = new javax.swing.GroupLayout(areaCaracteristicasAries);
@@ -1371,7 +2086,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGap(63, 63, 63)
                 .addComponent(imgSignoAquario)
                 .addGap(30, 30, 30)
-                .addComponent(tituloAquario, javax.swing.GroupLayout.DEFAULT_SIZE, 47, Short.MAX_VALUE)
+                .addComponent(tituloAquario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(areaInformacoesAquarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tfPeriodoAquario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1396,7 +2111,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGap(41, 41, 41))
         );
 
-        aquario.add(areaInformacoesAquario, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 240, 550));
+        aquario.add(areaInformacoesAquario, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 240, 550));
 
         previsaoAquario.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         previsaoAquario.setText("Previsão do Dia: ");
@@ -1455,6 +2170,14 @@ public class Signos extends javax.swing.JFrame {
         sorteAquario.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         sorteAquario.setText("Sorte:");
 
+        tfAmorAquario.setText("85%");
+
+        tfTrabalhoAquario.setText(" 88%");
+
+        tfSaudeAquario.setText("82%");
+
+        tfSorteAquario.setText("75%");
+
         javax.swing.GroupLayout areaEnergiaAquarioLayout = new javax.swing.GroupLayout(areaEnergiaAquario);
         areaEnergiaAquario.setLayout(areaEnergiaAquarioLayout);
         areaEnergiaAquarioLayout.setHorizontalGroup(
@@ -1499,10 +2222,10 @@ public class Signos extends javax.swing.JFrame {
                 .addComponent(sorteAquario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(tfSorteAquario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(40, Short.MAX_VALUE))
+                .addContainerGap(60, Short.MAX_VALUE))
         );
 
-        aquario.add(areaEnergiaAquario, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 90, 340, 300));
+        aquario.add(areaEnergiaAquario, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 40, 340, 320));
 
         tituloMensagemAquario.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         tituloMensagemAquario.setText("Mensagem do Dia:");
@@ -1525,7 +2248,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGroup(areaMensagemAquarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane46, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tituloMensagemAquario, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addContainerGap(36, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, areaMensagemAquarioLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnCopiarMensagemAquario)
@@ -1543,7 +2266,7 @@ public class Signos extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        aquario.add(areaMensagemAquario, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 420, 320, 250));
+        aquario.add(areaMensagemAquario, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 420, 330, 240));
 
         caracteristicasAquario.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         caracteristicasAquario.setText("Características");
@@ -1556,12 +2279,12 @@ public class Signos extends javax.swing.JFrame {
 
         txFortesAquario.setColumns(20);
         txFortesAquario.setRows(5);
-        txFortesAquario.setText("criatividade, independência, originalidade, inteligência e \nvisão de futuro.");
+        txFortesAquario.setText("criatividade, independência, originalidade, inteligência e visão de futuro.");
         jScrollPane47.setViewportView(txFortesAquario);
 
         txMelhoriasAquario.setColumns(20);
         txMelhoriasAquario.setRows(5);
-        txMelhoriasAquario.setText("teimosia, distanciamento emocional, imprevisibilidade,\nrebeldia e dificuldade em seguir regras.");
+        txMelhoriasAquario.setText("teimosia, distanciamento emocional, imprevisibilidade, rebeldia e dificuldade em seguir regras.");
         jScrollPane48.setViewportView(txMelhoriasAquario);
 
         javax.swing.GroupLayout areaCaracteristicasAquarioLayout = new javax.swing.GroupLayout(areaCaracteristicasAquario);
@@ -1598,7 +2321,7 @@ public class Signos extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        aquario.add(areaCaracteristicasAquario, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 70, 380, 330));
+        aquario.add(areaCaracteristicasAquario, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, 380, 360));
 
         fundoAquario.setIcon(new javax.swing.ImageIcon("C:\\Users\\ArthurGiuvannucci\\Documents\\ProjetoAppHoroscopo\\Horospoco\\src\\main\\resources\\assets\\81XnKshePmL._AC_SL1200_.jpg")); // NOI18N
         aquario.add(fundoAquario, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -1685,7 +2408,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGap(63, 63, 63)
                 .addComponent(imgSignoCancer)
                 .addGap(30, 30, 30)
-                .addComponent(tituloCancer, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
+                .addComponent(tituloCancer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(areaInformacoesCancerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tfPeriodoCancer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1710,7 +2433,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGap(41, 41, 41))
         );
 
-        cancer.add(areaInformacoesCancer, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 240, 550));
+        cancer.add(areaInformacoesCancer, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, 240, 550));
 
         tituloEnergiaCancer.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         tituloEnergiaCancer.setText("Energia do Dia");
@@ -1726,6 +2449,14 @@ public class Signos extends javax.swing.JFrame {
 
         sorteCancer.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         sorteCancer.setText("Sorte:");
+
+        tfAmorCancer.setText("92%");
+
+        tfTrabalhoCancer.setText(" 85%");
+
+        tfSaudeCancer.setText("65%");
+
+        tfSorteCancer.setText("80%");
 
         javax.swing.GroupLayout areaEnergiaCancerLayout = new javax.swing.GroupLayout(areaEnergiaCancer);
         areaEnergiaCancer.setLayout(areaEnergiaCancerLayout);
@@ -1772,10 +2503,10 @@ public class Signos extends javax.swing.JFrame {
                 .addComponent(sorteCancer)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(tfSorteCancer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
 
-        cancer.add(areaEnergiaCancer, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 90, 340, 290));
+        cancer.add(areaEnergiaCancer, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 60, 340, 310));
 
         tituloMensagemCancer.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         tituloMensagemCancer.setText("Menagem do Dia:");
@@ -1829,12 +2560,12 @@ public class Signos extends javax.swing.JFrame {
 
         txFortesCancer.setColumns(20);
         txFortesCancer.setRows(5);
-        txFortesCancer.setText("sensibilidade, empatia, proteção, lealdade e forte \nvínculo familiar.");
+        txFortesCancer.setText("sensibilidade, empatia, proteção, lealdade e forte vínculo familiar.");
         jScrollPane6.setViewportView(txFortesCancer);
 
         txMelhoriasCancer.setColumns(20);
         txMelhoriasCancer.setRows(5);
-        txMelhoriasCancer.setText("insegurança, excesso de sensibilidade, apego ao passado, \nmudanças de humor e tendência a se fechar.");
+        txMelhoriasCancer.setText("insegurança, excesso de sensibilidade, apego ao passado, mudanças de humor e tendência a se fechar.");
         jScrollPane7.setViewportView(txMelhoriasCancer);
 
         javax.swing.GroupLayout areaCaracteristicasCancerLayout = new javax.swing.GroupLayout(areaCaracteristicasCancer);
@@ -1871,7 +2602,7 @@ public class Signos extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        cancer.add(areaCaracteristicasCancer, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 60, 380, 330));
+        cancer.add(areaCaracteristicasCancer, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 60, 380, 340));
 
         previsaoCancer.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         previsaoCancer.setText("Previsão do Dia: ");
@@ -1916,7 +2647,7 @@ public class Signos extends javax.swing.JFrame {
         cancer.add(areaPrevisaoCancer, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 420, 380, 240));
 
         fundoCancer.setIcon(new javax.swing.ImageIcon("C:\\Users\\ArthurGiuvannucci\\Documents\\ProjetoAppHoroscopo\\Horospoco\\src\\main\\resources\\assets\\81XnKshePmL._AC_SL1200_.jpg")); // NOI18N
-        cancer.add(fundoCancer, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, -1, -1));
+        cancer.add(fundoCancer, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         areaAbas.addTab("Câncer", cancer);
 
@@ -2000,7 +2731,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGap(63, 63, 63)
                 .addComponent(imgSignoEscorpiao)
                 .addGap(30, 30, 30)
-                .addComponent(tituloEscorpiao, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                .addComponent(tituloEscorpiao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(areaInformacoesEscorpiaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tfPeriodoEscorpiao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2025,7 +2756,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGap(41, 41, 41))
         );
 
-        escorpiao.add(areaInformacoesEscorpiao, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 240, 550));
+        escorpiao.add(areaInformacoesEscorpiao, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, 240, 550));
 
         tituloEnergiaEscorpiao.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         tituloEnergiaEscorpiao.setText("Energia do Dia");
@@ -2041,6 +2772,14 @@ public class Signos extends javax.swing.JFrame {
 
         sorteEscorpiao.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         sorteEscorpiao.setText("Sorte:");
+
+        tfAmorEscorpiao.setText("95% ");
+
+        tfTrabalhoEscorpiao.setText(" 88%");
+
+        tfSaudeEscorpiao.setText("75%");
+
+        tfSorteEscorpiao.setText("80% ");
 
         javax.swing.GroupLayout areaEnergiaEscorpiaoLayout = new javax.swing.GroupLayout(areaEnergiaEscorpiao);
         areaEnergiaEscorpiao.setLayout(areaEnergiaEscorpiaoLayout);
@@ -2087,10 +2826,10 @@ public class Signos extends javax.swing.JFrame {
                 .addComponent(sorteEscorpiao)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(tfSorteEscorpiao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
 
-        escorpiao.add(areaEnergiaEscorpiao, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 90, 340, 290));
+        escorpiao.add(areaEnergiaEscorpiao, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 60, 340, 310));
 
         tituloMensagemEscorpiao.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         tituloMensagemEscorpiao.setText("Menagem do Dia:");
@@ -2144,12 +2883,12 @@ public class Signos extends javax.swing.JFrame {
 
         txFortesEscorpiao.setColumns(20);
         txFortesEscorpiao.setRows(5);
-        txFortesEscorpiao.setText("determinação, intensidade, lealdade, coragem e \ncapacidade de investigação.");
+        txFortesEscorpiao.setText("determinação, intensidade, lealdade, coragem e capacidade de investigação.");
         jScrollPane10.setViewportView(txFortesEscorpiao);
 
         txMelhoriasEscorpiao.setColumns(20);
         txMelhoriasEscorpiao.setRows(5);
-        txMelhoriasEscorpiao.setText("ciúme, desconfiança, possessividade, rancor e \ntendência ao controle.");
+        txMelhoriasEscorpiao.setText("ciúme, desconfiança, possessividade, rancor e tendência ao controle.");
         jScrollPane11.setViewportView(txMelhoriasEscorpiao);
 
         javax.swing.GroupLayout areaCaracteristicasEscorpiaoLayout = new javax.swing.GroupLayout(areaCaracteristicasEscorpiao);
@@ -2183,10 +2922,10 @@ public class Signos extends javax.swing.JFrame {
                 .addComponent(pmelhoriasEscorpiao)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
-        escorpiao.add(areaCaracteristicasEscorpiao, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 60, 380, 330));
+        escorpiao.add(areaCaracteristicasEscorpiao, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 60, 380, 350));
 
         previsaoEscorpiao.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         previsaoEscorpiao.setText("Previsão do Dia: ");
@@ -2315,7 +3054,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGap(63, 63, 63)
                 .addComponent(imgSignoGemeos)
                 .addGap(30, 30, 30)
-                .addComponent(tituloGemeos, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
+                .addComponent(tituloGemeos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(areaInformacoesGemeosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tfPeriodoGemeos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2340,7 +3079,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGap(41, 41, 41))
         );
 
-        gemeos.add(areaInformacoesGemeos, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 240, 550));
+        gemeos.add(areaInformacoesGemeos, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, 240, 550));
 
         GemeosGemeos.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         GemeosGemeos.setText("Previsão do Dia: ");
@@ -2399,6 +3138,16 @@ public class Signos extends javax.swing.JFrame {
         sorteGemeos.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         sorteGemeos.setText("Sorte:");
 
+        tfAmorGemeos.setText("75%");
+
+        tfTrabalhoGemeos.setText(" 85%");
+        tfTrabalhoGemeos.addActionListener(this::tfTrabalhoGemeosActionPerformed);
+
+        tfSaudeGemeos.setText("65%");
+
+        tfSorteGemeos.setText("50%");
+        tfSorteGemeos.addActionListener(this::tfSorteGemeosActionPerformed);
+
         javax.swing.GroupLayout areaEnergiaGemeosLayout = new javax.swing.GroupLayout(areaEnergiaGemeos);
         areaEnergiaGemeos.setLayout(areaEnergiaGemeosLayout);
         areaEnergiaGemeosLayout.setHorizontalGroup(
@@ -2444,10 +3193,10 @@ public class Signos extends javax.swing.JFrame {
                 .addComponent(sorteGemeos)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(tfSorteGemeos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
 
-        gemeos.add(areaEnergiaGemeos, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 90, 330, 270));
+        gemeos.add(areaEnergiaGemeos, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 60, 330, 300));
 
         tituloMensagemGemeos.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         tituloMensagemGemeos.setText("Menagem do Dia:");
@@ -2501,12 +3250,12 @@ public class Signos extends javax.swing.JFrame {
 
         txFortesGemeos.setColumns(20);
         txFortesGemeos.setRows(5);
-        txFortesGemeos.setText("comunicação, inteligência, curiosidade, criatividade \ne adaptabilidade.");
+        txFortesGemeos.setText("comunicação, inteligência, curiosidade, criatividade e adaptabilidade.");
         jScrollPane15.setViewportView(txFortesGemeos);
 
         txMelhoriasGemeos.setColumns(20);
         txMelhoriasGemeos.setRows(5);
-        txMelhoriasGemeos.setText("inconstância, ansiedade, dispersão, superficialidade \ne indecisão.");
+        txMelhoriasGemeos.setText("inconstância, ansiedade, dispersão, superficialidade e indecisão.");
         jScrollPane16.setViewportView(txMelhoriasGemeos);
 
         javax.swing.GroupLayout areaCaracteristicasGemeosLayout = new javax.swing.GroupLayout(areaCaracteristicasGemeos);
@@ -2543,7 +3292,7 @@ public class Signos extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        gemeos.add(areaCaracteristicasGemeos, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 60, 380, 330));
+        gemeos.add(areaCaracteristicasGemeos, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 60, 380, 350));
 
         fundoGemeos.setIcon(new javax.swing.ImageIcon("C:\\Users\\ArthurGiuvannucci\\Documents\\ProjetoAppHoroscopo\\Horospoco\\src\\main\\resources\\assets\\81XnKshePmL._AC_SL1200_.jpg")); // NOI18N
         gemeos.add(fundoGemeos, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, -1, -1));
@@ -2630,7 +3379,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGap(63, 63, 63)
                 .addComponent(imgSignoLeao)
                 .addGap(30, 30, 30)
-                .addComponent(tituloLeao, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
+                .addComponent(tituloLeao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(areaInformacoesLeaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tfPeriodoLeao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2655,7 +3404,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGap(41, 41, 41))
         );
 
-        leao.add(areaInformacoesLeao, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 240, 550));
+        leao.add(areaInformacoesLeao, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, 240, 550));
 
         previsaoLeao.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         previsaoLeao.setText("Previsão do Dia: ");
@@ -2697,7 +3446,7 @@ public class Signos extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        leao.add(areaPrevisaoLeao, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 420, 380, 240));
+        leao.add(areaPrevisaoLeao, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 440, 380, 240));
 
         tituloEnergiaLeao.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         tituloEnergiaLeao.setText("Energia do Dia");
@@ -2713,6 +3462,15 @@ public class Signos extends javax.swing.JFrame {
 
         sorteLeao.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         sorteLeao.setText("Sorte:");
+
+        tfAmorLeao.setText("100%");
+
+        tfTrabalhoLeao.setText("100%");
+        tfTrabalhoLeao.addActionListener(this::tfTrabalhoLeaoActionPerformed);
+
+        tfSaudeLeao.setText("100%");
+
+        tfSorteLeao.setText("100%");
 
         javax.swing.GroupLayout areaEnergiaLeaoLayout = new javax.swing.GroupLayout(areaEnergiaLeao);
         areaEnergiaLeao.setLayout(areaEnergiaLeaoLayout);
@@ -2758,10 +3516,10 @@ public class Signos extends javax.swing.JFrame {
                 .addComponent(sorteLeao)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(tfSorteLeao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
 
-        leao.add(areaEnergiaLeao, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 90, 330, 270));
+        leao.add(areaEnergiaLeao, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 60, 330, 300));
 
         tituloMensagemLeao.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         tituloMensagemLeao.setText("Menagem do Dia:");
@@ -2802,7 +3560,7 @@ public class Signos extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        leao.add(areaMensagemLeao, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 420, 320, 240));
+        leao.add(areaMensagemLeao, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 440, 320, 240));
 
         caracteristicasLeao.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         caracteristicasLeao.setText("Características");
@@ -2815,12 +3573,12 @@ public class Signos extends javax.swing.JFrame {
 
         txFortesLeao.setColumns(20);
         txFortesLeao.setRows(5);
-        txFortesLeao.setText("liderança, confiança, criatividade, generosidade \ne entusiasmo.");
+        txFortesLeao.setText("liderança, confiança, criatividade, generosidade e entusiasmo.");
         jScrollPane19.setViewportView(txFortesLeao);
 
         txMelhoriasLeao.setColumns(20);
         txMelhoriasLeao.setRows(5);
-        txMelhoriasLeao.setText("orgulho, necessidade de reconhecimento, autoritarismo, \nvaidade e dificuldade em aceitar críticas.");
+        txMelhoriasLeao.setText("orgulho, necessidade de reconhecimento, autoritarismo, vaidade e dificuldade em aceitar críticas.");
         jScrollPane20.setViewportView(txMelhoriasLeao);
 
         javax.swing.GroupLayout areaCaracteristicasLeaoLayout = new javax.swing.GroupLayout(areaCaracteristicasLeao);
@@ -2853,11 +3611,11 @@ public class Signos extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(pmelhoriasLeao)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jScrollPane20, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(42, Short.MAX_VALUE))
         );
 
-        leao.add(areaCaracteristicasLeao, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 60, 380, 330));
+        leao.add(areaCaracteristicasLeao, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 60, 380, 350));
 
         fundoLeao.setIcon(new javax.swing.ImageIcon("C:\\Users\\ArthurGiuvannucci\\Documents\\ProjetoAppHoroscopo\\Horospoco\\src\\main\\resources\\assets\\81XnKshePmL._AC_SL1200_.jpg")); // NOI18N
         leao.add(fundoLeao, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, -1, -1));
@@ -2944,7 +3702,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGap(63, 63, 63)
                 .addComponent(imgSignoLibra)
                 .addGap(30, 30, 30)
-                .addComponent(tituloLibra, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
+                .addComponent(tituloLibra, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(areaInformacoesLibraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tfPeriodoLibra, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2969,7 +3727,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGap(41, 41, 41))
         );
 
-        libra.add(areaInformacoesLibra, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 240, 550));
+        libra.add(areaInformacoesLibra, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 240, 550));
 
         previsaoLibra.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         previsaoLibra.setText("Previsão do Dia: ");
@@ -3073,10 +3831,10 @@ public class Signos extends javax.swing.JFrame {
                 .addComponent(sorteLibra)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(tfSorteLibra, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
 
-        libra.add(areaEnergiaLibra, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 90, 330, 270));
+        libra.add(areaEnergiaLibra, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 50, 330, 300));
 
         tituloMensagemLibra.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         tituloMensagemLibra.setText("Menagem do Dia:");
@@ -3130,12 +3888,12 @@ public class Signos extends javax.swing.JFrame {
 
         txFortesLibra.setColumns(20);
         txFortesLibra.setRows(5);
-        txFortesLibra.setText("diplomacia, sociabilidade, justiça, charme e capacidade \nde conciliação.");
+        txFortesLibra.setText("diplomacia, sociabilidade, justiça, charme e capacidade de conciliação.");
         jScrollPane23.setViewportView(txFortesLibra);
 
         txMelhoriasLibra.setColumns(20);
         txMelhoriasLibra.setRows(5);
-        txMelhoriasLibra.setText("indecisão, necessidade de aprovação, evitar conflitos \nexcessivamente e dificuldade em tomar decisões.");
+        txMelhoriasLibra.setText("indecisão, necessidade de aprovação, evitar conflitos excessivamente e dificuldade em tomar decisões.");
         jScrollPane24.setViewportView(txMelhoriasLibra);
 
         javax.swing.GroupLayout areaCaracteristicasLibraLayout = new javax.swing.GroupLayout(areaCaracteristicasLibra);
@@ -3172,7 +3930,7 @@ public class Signos extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        libra.add(areaCaracteristicasLibra, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 50, 380, 330));
+        libra.add(areaCaracteristicasLibra, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 50, 380, 350));
 
         fundoLibra.setIcon(new javax.swing.ImageIcon("C:\\Users\\ArthurGiuvannucci\\Documents\\ProjetoAppHoroscopo\\Horospoco\\src\\main\\resources\\assets\\81XnKshePmL._AC_SL1200_.jpg")); // NOI18N
         libra.add(fundoLibra, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, -1, -1));
@@ -3259,7 +4017,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGap(63, 63, 63)
                 .addComponent(imgSignoPeixes)
                 .addGap(30, 30, 30)
-                .addComponent(tituloPeixes, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
+                .addComponent(tituloPeixes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(areaInformacoesPeixesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tfPeriodoPeixes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -3284,7 +4042,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGap(41, 41, 41))
         );
 
-        peixes.add(areaInformacoesPeixes, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 240, 550));
+        peixes.add(areaInformacoesPeixes, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 240, 550));
 
         previsaoPeixes.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         previsaoPeixes.setText("Previsão do Dia: ");
@@ -3388,10 +4146,10 @@ public class Signos extends javax.swing.JFrame {
                 .addComponent(sorteAries6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(tfSorteAries6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
 
-        peixes.add(areaEnergiaPeixes, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 90, 330, 270));
+        peixes.add(areaEnergiaPeixes, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 60, 330, 290));
 
         tituloMensagemPeixes.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         tituloMensagemPeixes.setText("Menagem do Dia:");
@@ -3445,12 +4203,12 @@ public class Signos extends javax.swing.JFrame {
 
         txFortesPeixes.setColumns(20);
         txFortesPeixes.setRows(5);
-        txFortesPeixes.setText("empatia, imaginação, sensibilidade, criatividade e \ncompaixão.");
+        txFortesPeixes.setText("empatia, imaginação, sensibilidade, criatividade e compaixão.");
         jScrollPane27.setViewportView(txFortesPeixes);
 
         txMelhoriasPeixes.setColumns(20);
         txMelhoriasPeixes.setRows(5);
-        txMelhoriasPeixes.setText("idealização, escapismo, indecisão, excesso de sensibilidade e dificuldade em \nestabelecer limites.");
+        txMelhoriasPeixes.setText("idealização, escapismo, indecisão, excesso de sensibilidade e dificuldade em estabelecer limites.");
         jScrollPane28.setViewportView(txMelhoriasPeixes);
 
         javax.swing.GroupLayout areaCaracteristicasPeixesLayout = new javax.swing.GroupLayout(areaCaracteristicasPeixes);
@@ -3487,7 +4245,7 @@ public class Signos extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        peixes.add(areaCaracteristicasPeixes, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 60, 380, 340));
+        peixes.add(areaCaracteristicasPeixes, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 60, 380, 350));
 
         fundoPeixes.setIcon(new javax.swing.ImageIcon("C:\\Users\\ArthurGiuvannucci\\Documents\\ProjetoAppHoroscopo\\Horospoco\\src\\main\\resources\\assets\\81XnKshePmL._AC_SL1200_.jpg")); // NOI18N
         peixes.add(fundoPeixes, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, -1, -1));
@@ -3574,7 +4332,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGap(63, 63, 63)
                 .addComponent(imgSignoSargitario)
                 .addGap(30, 30, 30)
-                .addComponent(tituloSargitario, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                .addComponent(tituloSargitario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(areaInformacoesSargitarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tfPeriodoSargitario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -3599,7 +4357,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGap(41, 41, 41))
         );
 
-        sargitario.add(areaInformacoesSargitario, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 240, 550));
+        sargitario.add(areaInformacoesSargitario, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 240, 550));
 
         previsaoSargitario.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         previsaoSargitario.setText("Previsão do Dia: ");
@@ -3703,10 +4461,10 @@ public class Signos extends javax.swing.JFrame {
                 .addComponent(sorteSargitario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(tfSorteSargitario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
 
-        sargitario.add(areaEnergiaSargitario, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 90, 330, 270));
+        sargitario.add(areaEnergiaSargitario, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 60, 330, 300));
 
         tituloMensagemSargitario.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         tituloMensagemSargitario.setText("Menagem do Dia:");
@@ -3758,14 +4516,14 @@ public class Signos extends javax.swing.JFrame {
         pmelhoriasSargitario.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         pmelhoriasSargitario.setText("Pontos a Melhorar:");
 
-        txFortesSargitariov.setColumns(20);
-        txFortesSargitariov.setRows(5);
-        txFortesSargitariov.setText("otimismo, liberdade, aventura, sinceridade e entusiasmo.");
-        jScrollPane31.setViewportView(txFortesSargitariov);
+        txFortesSargitario.setColumns(20);
+        txFortesSargitario.setRows(5);
+        txFortesSargitario.setText("otimismo, liberdade, aventura, sinceridade e entusiasmo.");
+        jScrollPane31.setViewportView(txFortesSargitario);
 
         txMelhoriasSargitario.setColumns(20);
         txMelhoriasSargitario.setRows(5);
-        txMelhoriasSargitario.setText("impulsividade, excesso de sinceridade, impaciência,\nirresponsabilidade e dificuldade com limites.");
+        txMelhoriasSargitario.setText("impulsividade, excesso de sinceridade, impaciência, irresponsabilidade e dificuldade com limites.");
         jScrollPane32.setViewportView(txMelhoriasSargitario);
 
         javax.swing.GroupLayout areaCaracteristicasSargitarioLayout = new javax.swing.GroupLayout(areaCaracteristicasSargitario);
@@ -3802,7 +4560,7 @@ public class Signos extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        sargitario.add(areaCaracteristicasSargitario, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 60, 380, 330));
+        sargitario.add(areaCaracteristicasSargitario, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 60, 380, 350));
 
         fundoSargitario.setIcon(new javax.swing.ImageIcon("C:\\Users\\ArthurGiuvannucci\\Documents\\ProjetoAppHoroscopo\\Horospoco\\src\\main\\resources\\assets\\81XnKshePmL._AC_SL1200_.jpg")); // NOI18N
         sargitario.add(fundoSargitario, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, -1, -1));
@@ -3889,7 +4647,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGap(63, 63, 63)
                 .addComponent(imgSignoTouro)
                 .addGap(30, 30, 30)
-                .addComponent(tituloTouro, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                .addComponent(tituloTouro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(areaInformacoesTouroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tfPeriodoTouro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -3914,7 +4672,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGap(41, 41, 41))
         );
 
-        touro.add(areaInformacoesTouro, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 240, 550));
+        touro.add(areaInformacoesTouro, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 240, 550));
 
         previsaoTouro.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         previsaoTouro.setText("Previsão do Dia: ");
@@ -4017,10 +4775,10 @@ public class Signos extends javax.swing.JFrame {
                 .addComponent(sorteTouro)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(tfSorteTouro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
 
-        touro.add(areaEnergiaTouro, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 90, 330, 270));
+        touro.add(areaEnergiaTouro, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 60, 330, 300));
 
         tituloMensagemTouro.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         tituloMensagemTouro.setText("Menagem do Dia:");
@@ -4074,12 +4832,12 @@ public class Signos extends javax.swing.JFrame {
 
         txFortesTouro.setColumns(20);
         txFortesTouro.setRows(5);
-        txFortesTouro.setText("lealdade, estabilidade, determinação, paciência e\npraticidade.");
+        txFortesTouro.setText("lealdade, estabilidade, determinação, paciência e praticidade.");
         jScrollPane51.setViewportView(txFortesTouro);
 
         txMelhoriasTouro.setColumns(20);
         txMelhoriasTouro.setRows(5);
-        txMelhoriasTouro.setText("teimosia, possessividade, resistência a mudanças e apego\nexcessivo ao conforto.");
+        txMelhoriasTouro.setText("teimosia, possessividade, resistência a mudanças e apego excessivo ao conforto.");
         jScrollPane52.setViewportView(txMelhoriasTouro);
 
         javax.swing.GroupLayout areaCaracteristicasTouroLayout = new javax.swing.GroupLayout(areaCaracteristicasTouro);
@@ -4116,7 +4874,7 @@ public class Signos extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        touro.add(areaCaracteristicasTouro, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 50, 380, 330));
+        touro.add(areaCaracteristicasTouro, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 60, 380, 350));
 
         fundoTouro.setIcon(new javax.swing.ImageIcon("C:\\Users\\ArthurGiuvannucci\\Documents\\ProjetoAppHoroscopo\\Horospoco\\src\\main\\resources\\assets\\81XnKshePmL._AC_SL1200_.jpg")); // NOI18N
         touro.add(fundoTouro, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, -1, -1));
@@ -4203,7 +4961,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGap(63, 63, 63)
                 .addComponent(imgSignoVirgem)
                 .addGap(30, 30, 30)
-                .addComponent(tituloVirgem, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                .addComponent(tituloVirgem, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(areaInformacoesVirgemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tfPeriodoVirgem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -4228,7 +4986,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGap(41, 41, 41))
         );
 
-        virgem.add(areaInformacoesVirgem, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 240, 550));
+        virgem.add(areaInformacoesVirgem, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 240, 550));
 
         previsaoVirgem.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         previsaoVirgem.setText("Previsão do Dia: ");
@@ -4332,10 +5090,10 @@ public class Signos extends javax.swing.JFrame {
                 .addComponent(sorteVirgem)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(tfSorteVirgem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
 
-        virgem.add(areaEnergiaVirgem, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 90, 330, 270));
+        virgem.add(areaEnergiaVirgem, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 50, 330, 300));
 
         tituloMensagemVirgem.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         tituloMensagemVirgem.setText("Menagem do Dia:");
@@ -4389,12 +5147,12 @@ public class Signos extends javax.swing.JFrame {
 
         txFortesVirgem.setColumns(20);
         txFortesVirgem.setRows(5);
-        txFortesVirgem.setText("organização, inteligência, atenção aos detalhes, \nresponsabilidade e praticidade.");
+        txFortesVirgem.setText("organização, inteligência, atenção aos detalhes, responsabilidade e praticidade.");
         jScrollPane39.setViewportView(txFortesVirgem);
 
         txMelhoriasVirgem.setColumns(20);
         txMelhoriasVirgem.setRows(5);
-        txMelhoriasVirgem.setText("perfeccionismo, excesso de crítica, preocupação, rigidez e \ndificuldade em relaxar.");
+        txMelhoriasVirgem.setText("perfeccionismo, excesso de crítica, preocupação, rigidez e dificuldade em relaxar.");
         jScrollPane40.setViewportView(txMelhoriasVirgem);
 
         javax.swing.GroupLayout areaCaracteristicasVirgemLayout = new javax.swing.GroupLayout(areaCaracteristicasVirgem);
@@ -4431,7 +5189,7 @@ public class Signos extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        virgem.add(areaCaracteristicasVirgem, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 50, 380, 330));
+        virgem.add(areaCaracteristicasVirgem, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 50, 380, 350));
 
         fundoVirgem.setIcon(new javax.swing.ImageIcon("C:\\Users\\ArthurGiuvannucci\\Documents\\ProjetoAppHoroscopo\\Horospoco\\src\\main\\resources\\assets\\81XnKshePmL._AC_SL1200_.jpg")); // NOI18N
         virgem.add(fundoVirgem, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, -1, -1));
@@ -4518,7 +5276,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGap(42, 42, 42)
                 .addComponent(imgSignoCapricornio)
                 .addGap(51, 51, 51)
-                .addComponent(tituloCapricornio, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
+                .addComponent(tituloCapricornio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(areaInformacoesCapricornioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tfPeriodoCapricornio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -4543,7 +5301,7 @@ public class Signos extends javax.swing.JFrame {
                 .addGap(41, 41, 41))
         );
 
-        capricornio.add(areaInformacoesCapricornio, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 240, 550));
+        capricornio.add(areaInformacoesCapricornio, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 240, 550));
 
         previsaoCapricornio.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         previsaoCapricornio.setText("Previsão do Dia: ");
@@ -4647,10 +5405,10 @@ public class Signos extends javax.swing.JFrame {
                 .addComponent(sorteCapricornio)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(tfSorteCapricornio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
 
-        capricornio.add(areaEnergiaCapricornio, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 90, 330, 270));
+        capricornio.add(areaEnergiaCapricornio, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 60, 330, 300));
 
         tituloMensagemCapricornio.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         tituloMensagemCapricornio.setText("Menagem do Dia:");
@@ -4704,12 +5462,12 @@ public class Signos extends javax.swing.JFrame {
 
         txFortesCapricornio.setColumns(20);
         txFortesCapricornio.setRows(5);
-        txFortesCapricornio.setText("disciplina, responsabilidade, ambição, persistência e\norganização.");
+        txFortesCapricornio.setText("disciplina, responsabilidade, ambição, persistência e organização.");
         jScrollPane43.setViewportView(txFortesCapricornio);
 
         txMelhoriasCapricornio.setColumns(20);
         txMelhoriasCapricornio.setRows(5);
-        txMelhoriasCapricornio.setText("pessimismo, rigidez, excesso de trabalho, frieza aparente e \ndificuldade em demonstrar emoções.");
+        txMelhoriasCapricornio.setText("pessimismo, rigidez, excesso de trabalho, frieza aparente e dificuldade em demonstrar emoções.");
         jScrollPane44.setViewportView(txMelhoriasCapricornio);
 
         javax.swing.GroupLayout areaCaracteristicasCapricornioLayout = new javax.swing.GroupLayout(areaCaracteristicasCapricornio);
@@ -4746,7 +5504,7 @@ public class Signos extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        capricornio.add(areaCaracteristicasCapricornio, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 60, 380, 330));
+        capricornio.add(areaCaracteristicasCapricornio, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 60, 380, 350));
 
         fundoCapricornio.setIcon(new javax.swing.ImageIcon("C:\\Users\\ArthurGiuvannucci\\Documents\\ProjetoAppHoroscopo\\Horospoco\\src\\main\\resources\\assets\\81XnKshePmL._AC_SL1200_.jpg")); // NOI18N
         capricornio.add(fundoCapricornio, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -4763,6 +5521,7 @@ public class Signos extends javax.swing.JFrame {
     }//GEN-LAST:event_tfNomeActionPerformed
 
     private void btnDescobrirSignoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDescobrirSignoActionPerformed
+   CalcularSigno();
         // TODO add your handling code here:
     }//GEN-LAST:event_btnDescobrirSignoActionPerformed
 
@@ -5009,6 +5768,23 @@ public class Signos extends javax.swing.JFrame {
     private void tfPlanetaAriesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfPlanetaAriesActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tfPlanetaAriesActionPerformed
+
+    private void tfTrabalhoLeaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfTrabalhoLeaoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tfTrabalhoLeaoActionPerformed
+
+    private void tfTrabalhoGemeosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfTrabalhoGemeosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tfTrabalhoGemeosActionPerformed
+
+    private void tfSorteGemeosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfSorteGemeosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tfSorteGemeosActionPerformed
+
+    private void btnCalularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalularActionPerformed
+        // TODO add your handling code here:
+        CalcularCompatibilidade();
+    }//GEN-LAST:event_btnCalularActionPerformed
 
     /**
      * @param args the command line arguments
@@ -5548,7 +6324,7 @@ public class Signos extends javax.swing.JFrame {
     private javax.swing.JTextArea txFortesLeao;
     private javax.swing.JTextArea txFortesLibra;
     private javax.swing.JTextArea txFortesPeixes;
-    private javax.swing.JTextArea txFortesSargitariov;
+    private javax.swing.JTextArea txFortesSargitario;
     private javax.swing.JTextArea txFortesTouro;
     private javax.swing.JTextArea txFortesVirgem;
     private javax.swing.JTextArea txMelhoriasAquario;
