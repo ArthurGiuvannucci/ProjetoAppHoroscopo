@@ -6,7 +6,11 @@ package Interface;
 
 import java.awt.Image;
 import java.time.LocalDate;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
 
 /**
  * 
@@ -19,6 +23,13 @@ public class Signos extends javax.swing.JFrame {
     /**
      * Creates new form Signos
      */
+    //
+     Clip musica;
+     
+     
+     
+     
+     
     public Signos() {
         initComponents();
         //RedimencionarImagens (); //serve para redimencionar imagens que ficaram estouradas
@@ -915,7 +926,53 @@ if (signo1.equalsIgnoreCase("Áries ♈")) {
        
    }//fim da função 
     
-    
+   public void TocarMusica() {
+    try {
+        // Se a música já foi carregada, continuar a reprodução
+        if (musica != null && musica.isOpen()) {
+            musica.start();
+            return;
+        }
+
+        // Localizar o arquivo dentro do projeto
+        java.net.URL arquivo = getClass().getResource("/musicas/musica1.wav");
+
+        if (arquivo == null) {
+            JOptionPane.showMessageDialog(this, "Arquivo de música não encontrado!");
+            return;
+        }
+
+        // Abrir o áudio e carregar a música
+        try (AudioInputStream audio = AudioSystem.getAudioInputStream(arquivo)) {
+            musica = (Clip) AudioSystem.getClip();
+            musica.open(audio);
+        }
+
+        // Iniciar a reprodução
+        musica.start();
+
+    } catch (Exception erro) {
+        JOptionPane.showMessageDialog(
+                this,
+                "Erro ao tocar a música: " + erro.getMessage()
+        );
+    }
+}// Fim do TocarMusica
+   
+   public void PausarMusica() {
+    if (musica != null && musica.isOpen()) {
+        // Pausar na posição atual
+        musica.stop();
+    }
+}// Fim do PausarMusica
+
+   public void PararMusica() {
+    if (musica != null && musica.isOpen()) {
+        // Parar e voltar ao início
+        musica.stop();
+        musica.setFramePosition(0);
+    }
+}// Fim do PararMusica
     
     
     
@@ -934,6 +991,8 @@ if (signo1.equalsIgnoreCase("Áries ♈")) {
         compatibilidade = new javax.swing.JLabel();
         btnSigno = new javax.swing.JButton();
         tfCompatibilidade = new javax.swing.JTextField();
+        btnPlay = new javax.swing.JButton();
+        btnPause = new javax.swing.JButton();
         areaDescobrirSigno = new javax.swing.JPanel();
         tituloDescobrirSigno = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -1495,6 +1554,12 @@ if (signo1.equalsIgnoreCase("Áries ♈")) {
         compatibilidade.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         compatibilidade.setText("Compatibilidade");
 
+        btnPlay.setText("Play");
+        btnPlay.addActionListener(this::btnPlayActionPerformed);
+
+        btnPause.setText("Pause");
+        btnPause.addActionListener(this::btnPauseActionPerformed);
+
         javax.swing.GroupLayout areaResultadoLayout = new javax.swing.GroupLayout(areaResultado);
         areaResultado.setLayout(areaResultadoLayout);
         areaResultadoLayout.setHorizontalGroup(
@@ -1515,6 +1580,12 @@ if (signo1.equalsIgnoreCase("Áries ♈")) {
                 .addGap(69, 69, 69)
                 .addComponent(compatibilidade)
                 .addContainerGap(73, Short.MAX_VALUE))
+            .addGroup(areaResultadoLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(btnPlay)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnPause)
+                .addGap(15, 15, 15))
         );
         areaResultadoLayout.setVerticalGroup(
             areaResultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1526,8 +1597,12 @@ if (signo1.equalsIgnoreCase("Áries ♈")) {
                 .addGap(35, 35, 35)
                 .addComponent(compatibilidade, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(tfCompatibilidade, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(99, Short.MAX_VALUE))
+                .addComponent(tfCompatibilidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 159, Short.MAX_VALUE)
+                .addGroup(areaResultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnPlay)
+                    .addComponent(btnPause))
+                .addGap(33, 33, 33))
         );
 
         inicio.add(areaResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 90, 330, 580));
@@ -5760,7 +5835,7 @@ if (signo1.equalsIgnoreCase("Áries ♈")) {
     private void tfNumeroTouroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfNumeroTouroActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tfNumeroTouroActionPerformed
-
+ 
     private void btnAtualizarPrevisaoTouroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtualizarPrevisaoTouroActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnAtualizarPrevisaoTouroActionPerformed
@@ -5785,6 +5860,16 @@ if (signo1.equalsIgnoreCase("Áries ♈")) {
         // TODO add your handling code here:
         CalcularCompatibilidade();
     }//GEN-LAST:event_btnCalularActionPerformed
+
+    private void btnPlayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlayActionPerformed
+       // TODO add your handling code here:
+       TocarMusica();
+    }//GEN-LAST:event_btnPlayActionPerformed
+
+    private void btnPauseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPauseActionPerformed
+        // TODO add your handling code here:
+        PausarMusica();
+    }//GEN-LAST:event_btnPauseActionPerformed
 
     /**
      * @param args the command line arguments
@@ -5918,6 +6003,8 @@ if (signo1.equalsIgnoreCase("Áries ♈")) {
     private javax.swing.JButton btnCopiarMensagemTouro;
     private javax.swing.JButton btnCopiarMensagemVirgem;
     private javax.swing.JButton btnDescobrirSigno;
+    private javax.swing.JButton btnPause;
+    private javax.swing.JButton btnPlay;
     private javax.swing.JButton btnSigno;
     private javax.swing.JPanel cancer;
     private javax.swing.JPanel capricornio;
